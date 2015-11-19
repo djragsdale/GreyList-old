@@ -6,7 +6,7 @@
   "contributors": [
     {
       "name": "Isaac Vining",
-      "email": "justbe@microsoft.com",
+      "email": "",
       "website": "http://theskylinesocial.com"
     }
   ],
@@ -16,8 +16,12 @@
     "CGP Grey"
   ],
   "dependencies": {
+    "body-parser": "1.0.2",
+    "error-handler": "1.0.0",
     "jade": "*",
-    "express": "~3.1.0"
+    "express": "~3.1.0",
+    "method-override": "2.3.5",
+    "morgan": "1.6.1"
   },
   "noAnalyze": true,
   "license": "Apache",
