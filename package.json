@@ -1,0 +1,27 @@
+{
+  "name": "GreyList",
+  "version": "0.1.0",
+  "author": "David Ragsdale <webmaster@otiummusic.com>",
+  "description": "A to-do list built entirely to Isaac's specifications",
+  "contributors": [
+    {
+      "name": "Isaac Vining",
+      "email": "justbe@microsoft.com",
+      "website": "http://theskylinesocial.com"
+    }
+  ],
+  "main": "./app.js",
+  "keywords": [
+    "To-Do List",
+    "CGP Grey"
+  ],
+  "dependencies": {
+    "jade": "*",
+    "express": "~3.1.0"
+  },
+  "noAnalyze": true,
+  "license": "Apache",
+  "engines": {
+    "node": ">=0.6.14"
+  }
+}
