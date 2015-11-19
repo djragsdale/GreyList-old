@@ -10,11 +10,18 @@ function IndexCtrl($scope, $http) {
         });
 }
 
+function TemplatesCtrl($scope, $http) {
+    $http.get('/api/templates').
+        success(function (data, status, headers, config) {
+            $scope.templates = "something";
+        });
+}
+
 function ListCtrl($scope, $http, $routeParams) {
-    $http.get('/api/list' + $routeParams.id).
+    $http.get('/api/list/' + $routeParams.id).
         success(function (data) {
             $scope.list = data.list;
-            $scope.templates = data.template;
+            $scope.templates = data.templates;
         }).
         error(function (data, status, headers, config) {
           $scope.list = 'Error!';
@@ -22,10 +29,30 @@ function ListCtrl($scope, $http, $routeParams) {
         });
 }
 
-function TemplatesCtrl($scope, $http) {
-    $http.get('/api/templates').
-        success(function (data, status, headers, config) {
-            $scope.templates = data.templates;
+function AddListCtrl($scope, $http) {
+    $scope.form = {};
+    $scope.submitPost = function () {
+        $http.post('/api/list', $scope.form).
+            success(function (data) {
+                $location.path('/');
+            });
+    };
+}
+
+//function TemplatesCtrl($scope, $http) {
+//    $http.get('/api/templates').
+//        success(function (data, status, headers, config) {
+//            $scope.templates = data.templates;
+//        });
+//}
+
+function TemplateCtrl($scope, $http, $routeParams) {
+    $http.get('/api/template/' + $routeParams.id).
+        success(function (data) {
+            $scope.template = data.template;
+        }).
+        error(function (data, status, headers, config) {
+          $scope.templates = 'Error!';
         });
 }
 
@@ -81,31 +108,18 @@ function DeletePostCtrl($scope, $http, $location, $routeParams) {
 
 
 
-angular.module('myApp.controllers', []).
-  controller('TemplatesCtrl', TemplatesCtrl).
-  controller('TemplateCtrl', function($scope, $http, $location, $routeParams) {
-      $http({
-          method: 'GET',
-          url: '/api/template/' +  + $routeParams.id
-      }).
-      success(function (data, status, headers, config) {
-          $scope.template = data.template;
-      }).
-      error(function (data, status, headers, config) {
-          $scope.template = 'Error!';
-      });
-  }).
-  controller('AppCtrl', function ($scope, $http) {
-
-    $http({
-      method: 'GET',
-      url: '/api/name'
-    }).
-    success(function (data, status, headers, config) {
-      $scope.name = data.name;
-    }).
-    error(function (data, status, headers, config) {
-      $scope.name = 'Error!';
-    });
-
-  });
+//angular.module('myApp.controllers', []).
+//  controller('AppCtrl', function ($scope, $http) {
+//
+//    $http({
+//      method: 'GET',
+//      url: '/api/name'
+//    }).
+//    success(function (data, status, headers, config) {
+//      $scope.name = data.name;
+//    }).
+//    error(function (data, status, headers, config) {
+//      $scope.name = 'Error!';
+//    });
+//
+//  });

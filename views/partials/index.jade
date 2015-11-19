@@ -1,12 +1,16 @@
-div(class='tile bg-green fg-white', data-role='tile')
+a(href='/addList', class='tile bg-green fg-white', data-role='tile')
   div(class='tile-content iconic')
-    span(class='icon mif-plus')
-div(ng-repeat='list in lists', class='tile bg-teal fg-white', data-role='tile')
-  div(class='tile-content iconic')
-    span(class='tile-title text-light') {{list.title}}
-    p(class='tile-text text-light', style='white-space:pre;')
-      | {{list.lastupdated}}
-      | {{list.completed}}/{{list.items.length}} completed
-
-p
-  {{templates}}
+    div(class='frame')
+      div(style='width: 100%; height: 100%; border-radius: 0px')
+        span(class='icon mif-plus')
+a(ng-repeat='list in lists', href='/list/{{list.id}}', class='tile op-teal fg-white', data-role='tile')
+  div(class='tile-content iconic slide-down-2')
+    div(class='slide')
+      div(class='image-container')
+        div(class='frame')
+          div(style='width: 100%; height: 100%; border-radius: 0px;', class='bg-teal')
+            span(class='tile-label text-large') {{list.title}}
+    div(class='slide-over text-medium padding10', style='white-space:pre;')
+      span
+        | {{list.lastupdated}}
+        | {{list.completed}}/{{list.items.length}} completed

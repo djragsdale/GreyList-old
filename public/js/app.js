@@ -13,6 +13,10 @@ config(['$routeProvider', '$locationProvider', function ($routeProvider, $locati
       templateUrl: 'partials/index',
       controller: 'IndexCtrl'
     }).
+    when('/addList', {
+       templateUrl: 'partials/addList',
+       controller: 'AddListCtrl' 
+    }).
     when('/addPost', {
       templateUrl: 'partials/addPost',
       controller: 'AddPostCtrl'
@@ -25,7 +29,7 @@ config(['$routeProvider', '$locationProvider', function ($routeProvider, $locati
       templateUrl: 'partials/editPost',
       controller: 'EditPostCtrl'
     }).
-    when('/deltePost/:id', {
+    when('/deletePost/:id', {
       templateUrl: 'partials/deletePost',
       controller: 'DeletePostCtrl'
     }).

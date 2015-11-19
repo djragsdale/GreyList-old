@@ -144,17 +144,17 @@ var data = {
 // GET
 
 exports.templates = function (req, res) {
-    var templates = [];
-    data.templates.forEach(function (template, i) {
-        templates.push({
-            id: template.id,
-            title: template.title,
-            lastupdated: template.lastupdated,
-            items: template.items
-        });
-    });
+    //var templates = [];
+    //data.templates.forEach(function (template, i) {
+    //    templates.push({
+    //        id: template.id,
+    //        title: template.title,
+    //        lastupdated: template.lastupdated,
+    //        items: template.items
+    //    });
+    //});
     res.json({
-        templates: templates
+        templates: "TEMPLATES"
     });
 };
 
@@ -251,6 +251,7 @@ exports.editList = function (req, res) {
     }
 };
 
+// DELETE
 exports.deleteList = function (req, res) {
     var id = req.params.id;
 
@@ -261,6 +262,8 @@ exports.deleteList = function (req, res) {
         res.json(false);
     }
 };
+
+
 
 exports.posts = function (req, res) {
     var posts = [];

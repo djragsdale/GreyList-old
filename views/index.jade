@@ -3,15 +3,18 @@ extends layout
 block body
   div(class='container')
     header(class='margin20 no-margin-left no-margin-right')
-      h2 Lists
-      ul
-        li
-          a(href='/') Home
-        li
-          a(href='/templates') Templates
+      div(class='clear-float')
+        a(class='place-left', href='/', title='true')
+          h1 Lists
+      div(class='main-menu-wrapper')
+        ul(class='horizontal-menu', style='margin-left: -20px')
+          li
+            a(href='/') Home
+          li
+            a(href='/templates') Templates
     div(ng-view, class='main-content clear-float')
     footer
-      span (C) Copyright David Ragsdale 2015
+      span Copyright &copy; David Ragsdale 2015
 
   script(src='js/lib/angular/angular.js')
   script(src='js/app.js')
