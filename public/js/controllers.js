@@ -10,12 +10,24 @@ function IndexCtrl($scope, $http) {
         });
 }
 
-//function IndexCtrl($scope, $http) {
-//    $http.get('/api/posts').
-//        success(function (data, status, headers, config) {
-//            $scope.posts = data.posts;
-//        });
-//}
+function ListCtrl($scope, $http, $routeParams) {
+    $http.get('/api/list' + $routeParams.id).
+        success(function (data) {
+            $scope.list = data.list;
+            $scope.templates = data.template;
+        }).
+        error(function (data, status, headers, config) {
+          $scope.list = 'Error!';
+          $scope.templates = 'Error!';
+        });
+}
+
+function TemplatesCtrl($scope, $http) {
+    $http.get('/api/templates').
+        success(function (data, status, headers, config) {
+            $scope.templates = data.templates;
+        });
+}
 
 function AddPostCtrl($scope, $http) {
     $scope.form = {};
@@ -70,19 +82,18 @@ function DeletePostCtrl($scope, $http, $location, $routeParams) {
 
 
 angular.module('myApp.controllers', []).
-  controller('ListCtrl', function ($scope, $http) {
-
-    $http({
-      method: 'GET',
-      url: '/api/list'
-    }).
-    success(function (data, status, headers, config) {
-      $scope.list = data.list;
-    }).
-    error(function (data, status, headers, config) {
-      $scope.list = 'Error!';
-    });
-
+  controller('TemplatesCtrl', TemplatesCtrl).
+  controller('TemplateCtrl', function($scope, $http, $location, $routeParams) {
+      $http({
+          method: 'GET',
+          url: '/api/template/' +  + $routeParams.id
+      }).
+      success(function (data, status, headers, config) {
+          $scope.template = data.template;
+      }).
+      error(function (data, status, headers, config) {
+          $scope.template = 'Error!';
+      });
   }).
   controller('AppCtrl', function ($scope, $http) {
 
@@ -96,13 +107,5 @@ angular.module('myApp.controllers', []).
     error(function (data, status, headers, config) {
       $scope.name = 'Error!';
     });
-
-  }).
-  controller('MyCtrl1', function ($scope) {
-    // write Ctrl here
-
-  }).
-  controller('MyCtrl2', function ($scope) {
-    // write Ctrl here
 
   });

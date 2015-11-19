@@ -1,0 +1,61 @@
+Express server listening on port \\.\pipe\0825452a-a3e0-4b4a-8672-ee41964c92f9
+[0mGET / [32m200 [0m74.842 ms - 952[0m
+[90mGET / [32m200 [90m106ms - 952[0m
+[0mGET /partials/index [32m200 [0m3.674 ms - 454[0m
+[90mGET /partials/index [32m200 [90m8ms - 454[0m
+[0mGET /api/lists [36m304 [0m1.223 ms - -[0m
+[90mGET /api/lists [36m304 [90m6ms[0m
+[0mGET / [32m200 [0m11.228 ms - 952[0m
+[90mGET / [32m200 [90m23ms - 952[0m
+[0mGET /partials/index [32m200 [0m6.856 ms - 517[0m
+[90mGET /partials/index [32m200 [90m13ms - 517[0m
+[0mGET /api/lists [36m304 [0m0.691 ms - -[0m
+[90mGET /api/lists [36m304 [90m5ms[0m
+[0mGET / [32m200 [0m10.859 ms - 952[0m
+[90mGET / [32m200 [90m24ms - 952[0m
+[0mGET /partials/index [32m200 [0m5.769 ms - 517[0m
+[90mGET /partials/index [32m200 [90m16ms - 517[0m
+[0mGET /api/lists [36m304 [0m0.544 ms - -[0m
+[90mGET /api/lists [36m304 [90m5ms[0m
+[0mGET /favicon.ico [32m200 [0m13.861 ms - 1406[0m
+[0mGET / [32m200 [0m9.172 ms - 952[0m
+[90mGET / [32m200 [90m19ms - 952[0m
+[0mGET /partials/index [32m200 [0m2.267 ms - 517[0m
+[90mGET /partials/index [32m200 [90m8ms - 517[0m
+[0mGET /api/lists [36m304 [0m2.999 ms - -[0m
+[90mGET /api/lists [36m304 [90m11ms[0m
+[0mGET / [32m200 [0m12.470 ms - 952[0m
+[90mGET / [32m200 [90m29ms - 952[0m
+[0mGET /partials/index [32m200 [0m3.217 ms - 517[0m
+[90mGET /partials/index [32m200 [90m7ms - 517[0m
+[0mGET /api/lists [36m304 [0m2.181 ms - -[0m
+[90mGET /api/lists [36m304 [90m12ms[0m
+[0mGET /favicon.ico [32m200 [0m0.086 ms - 1406[0m
+[0mGET / [32m200 [0m7.405 ms - 952[0m
+[90mGET / [32m200 [90m19ms - 952[0m
+[0mGET /partials/index [32m200 [0m5.193 ms - 620[0m
+[90mGET /partials/index [32m200 [90m16ms - 620[0m
+[0mGET /api/lists [36m304 [0m0.315 ms - -[0m
+[90mGET /api/lists [36m304 [90m14ms[0m
+[0mGET /favicon.ico [32m200 [0m0.066 ms - 1406[0m
+[0mGET / [32m200 [0m3.288 ms - 952[0m
+[90mGET / [32m200 [90m18ms - 952[0m
+[0mGET /partials/index [32m200 [0m2.445 ms - 619[0m
+[90mGET /partials/index [32m200 [90m9ms - 619[0m
+[0mGET /api/lists [36m304 [0m0.301 ms - -[0m
+[90mGET /api/lists [36m304 [90m6ms[0m
+[0mGET /favicon.ico [32m200 [0m0.056 ms - 1406[0m
+[0mGET / [32m200 [0m4.162 ms - 952[0m
+[90mGET / [32m200 [90m24ms - 952[0m
+[0mGET /partials/index [32m200 [0m2.375 ms - 612[0m
+[90mGET /partials/index [32m200 [90m13ms - 612[0m
+[0mGET /api/lists [36m304 [0m0.701 ms - -[0m
+[90mGET /api/lists [36m304 [90m8ms[0m
+[0mGET /favicon.ico [32m200 [0m0.058 ms - 1406[0m
+[0mGET / [32m200 [0m2.161 ms - 952[0m
+[90mGET / [32m200 [90m10ms - 952[0m
+[0mGET /partials/index [32m200 [0m1.889 ms - 490[0m
+[90mGET /partials/index [32m200 [90m7ms - 490[0m
+[0mGET /api/lists [36m304 [0m0.390 ms - -[0m
+[90mGET /api/lists [36m304 [90m8ms[0m
+[0mGET /favicon.ico [32m200 [0m0.051 ms - 1406[0m

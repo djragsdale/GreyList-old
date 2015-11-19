@@ -1,0 +1,9 @@
+h3 {{template.title}}
+div {{template.lastupdated}}
+div(ng-repeat='item in template.items')
+  p
+    [ ]
+    span {{item.text}}
+      a(href='list/{{list.id}}/deleteItem/{{item.id}}')
+      input(type='checkbox', checked='true')
+Delete

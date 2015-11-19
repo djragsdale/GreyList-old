@@ -1,5 +1,12 @@
-div(ng-repeat='list in lists')
-  h3 {{list.title}}
-  div {{list.lastupdated}}
-  a(href='list/{{list.id}}')
-More
+div(class='tile bg-green fg-white', data-role='tile')
+  div(class='tile-content iconic')
+    span(class='icon mif-plus')
+div(ng-repeat='list in lists', class='tile bg-teal fg-white', data-role='tile')
+  div(class='tile-content iconic')
+    span(class='tile-title text-light') {{list.title}}
+    p(class='tile-text text-light', style='white-space:pre;')
+      | {{list.lastupdated}}
+      | {{list.completed}}/{{list.items.length}} completed
+
+p
+  {{templates}}

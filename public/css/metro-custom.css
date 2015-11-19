@@ -1,0 +1,19 @@
+
+.tile-content > .tile-title,
+.tile-content > .tile-text {
+    margin: 10px;
+}
+
+.tile-title {
+    display: inline-block;
+    font: normal normal normal 1.5em/1;
+    font-family: metro, "Segoe UI", "Open Sans", serif;
+    font-size: 1.5em;
+}
+
+.tile-text {
+    display: inline-block;
+    font: normal normal normal 1.5em/1;
+    font-family: metro, "Segoe UI", "Open Sans", serif;
+    font-size: 1em;
+}

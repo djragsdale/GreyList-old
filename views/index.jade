@@ -1,23 +1,17 @@
 extends layout
 
 block body
-  div
-    h2 Lists
-    ul
-      li
-        a(href='/') Home
-      li
-        a(href='/addList') Create a new list
-      li
-        div(class='input-control select')
-          select(ng-model='form.template')
-            option(ng-repeat='template in templates') {{template.title}}
-          button(ng-click='addListFromTemplate()', class='button')
-            Create new list from template
-      li
-        a(href='/addTemplate') Create a new template
-
-    div(ng-view)
+  div(class='container')
+    header(class='margin20 no-margin-left no-margin-right')
+      h2 Lists
+      ul
+        li
+          a(href='/') Home
+        li
+          a(href='/templates') Templates
+    div(ng-view, class='main-content clear-float')
+    footer
+      span (C) Copyright David Ragsdale 2015
 
   script(src='js/lib/angular/angular.js')
   script(src='js/app.js')

@@ -1,0 +1,7 @@
+Express server listening on port \\.\pipe\142c8eb5-8673-4768-95ef-b1ccdd5952bf
+[0mGET / [32m200 [0m29.994 ms - 849[0m
+[90mGET / [32m200 [90m36ms - 849[0m
+[0mGET /partials/index [32m200 [0m2.448 ms - 278[0m
+[90mGET /partials/index [32m200 [90m6ms - 278[0m
+[0mGET /api/lists [36m304 [0m1.517 ms - -[0m
+[90mGET /api/lists [36m304 [90m6ms[0m

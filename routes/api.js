@@ -161,11 +161,18 @@ exports.templates = function (req, res) {
 exports.lists = function (req, res) {
     var lists = [];
     data.lists.forEach(function (list, i) {
+        var intComplete = 0;
+        list.items.forEach(function (item, i) {
+            if (item.checked) {
+                intComplete++;
+            }
+        });
         lists.push({
-            id: i,
+            id: list.id,
             title: list.title,
             lastupdated: list.lastupdated,
-            items: list.items
+            items: list.items,
+            completed: intComplete
         });
     });
     var templates = [];
