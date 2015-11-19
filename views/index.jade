@@ -2,12 +2,20 @@ extends layout
 
 block body
   div
-    h2 My Blog
+    h2 Lists
     ul
       li
         a(href='/') Home
       li
-        a(href='/addPost') Add a new post
+        a(href='/addList') Create a new list
+      li
+        div(class='input-control select')
+          select(ng-model='form.template')
+            option(ng-repeat='template in templates') {{template.title}}
+          button(ng-click='addListFromTemplate()', class='button')
+            Create new list from template
+      li
+        a(href='/addTemplate') Create a new template
 
     div(ng-view)
 

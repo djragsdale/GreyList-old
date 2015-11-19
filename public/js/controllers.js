@@ -3,11 +3,19 @@
 /* Controllers */
 
 function IndexCtrl($scope, $http) {
-    $http.get('/api/posts').
+    $http.get('/api/lists').
         success(function (data, status, headers, config) {
-            $scope.posts = data.posts;
+            $scope.lists = data.lists;
+            $scope.templates = data.templates;
         });
 }
+
+//function IndexCtrl($scope, $http) {
+//    $http.get('/api/posts').
+//        success(function (data, status, headers, config) {
+//            $scope.posts = data.posts;
+//        });
+//}
 
 function AddPostCtrl($scope, $http) {
     $scope.form = {};
@@ -59,7 +67,23 @@ function DeletePostCtrl($scope, $http, $location, $routeParams) {
     };
 }
 
+
+
 angular.module('myApp.controllers', []).
+  controller('ListCtrl', function ($scope, $http) {
+
+    $http({
+      method: 'GET',
+      url: '/api/list'
+    }).
+    success(function (data, status, headers, config) {
+      $scope.list = data.list;
+    }).
+    error(function (data, status, headers, config) {
+      $scope.list = 'Error!';
+    });
+
+  }).
   controller('AppCtrl', function ($scope, $http) {
 
     $http({

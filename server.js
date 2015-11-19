@@ -55,6 +55,12 @@ app.get('/partials/:name', routes.partials);
 
 // JSON API
 
+app.get('/api/lists', api.lists);
+app.get('/api/list/:id', api.list);
+app.post('/api/list', api.addList);
+app.put('/api/list/:id', api.editList);
+app.delete('/api/list/:id', api.deleteList);
+
 app.get('/api/posts', api.posts);
 
 app.get('/api/post/:id', api.post);

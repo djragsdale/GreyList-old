@@ -1,0 +1,1329 @@
+/*
+* params: name, background, backgroundHover, item, itemHover, itemDisabled, divider, dropdown-toggle
+*/
+.app-bar.#ffc0cb {
+  background-color: #dc4fad;
+}
+.app-bar.#ffc0cb .app-bar-element:hover,
+.app-bar.#ffc0cb .app-bar-menu > li:hover,
+.app-bar.#ffc0cb .app-bar-menu > li > a:hover,
+.app-bar.#ffc0cb .app-bar-element:active,
+.app-bar.#ffc0cb .app-bar-menu > li:active,
+.app-bar.#ffc0cb .app-bar-menu > li > a:active {
+  background-color: #9a165a;
+}
+.app-bar.#ffc0cb .app-bar-divider {
+  background-color: #f472d0;
+}
+.app-bar.#ffc0cb .app-bar-element .d-menu,
+.app-bar.#ffc0cb .app-bar-menu > li .d-menu {
+  background-color: #dc4fad;
+  border-color: transparent;
+}
+.app-bar.#ffc0cb .app-bar-element .d-menu li:not(.disabled) > a,
+.app-bar.#ffc0cb .app-bar-menu > li .d-menu li:not(.disabled) > a,
+.app-bar.#ffc0cb .app-bar-element .d-menu li > a,
+.app-bar.#ffc0cb .app-bar-menu > li .d-menu li > a {
+  background-color: #dc4fad;
+  color: #ffffff;
+}
+.app-bar.#ffc0cb .app-bar-element .d-menu li:not(.disabled) > a:hover,
+.app-bar.#ffc0cb .app-bar-menu > li .d-menu li:not(.disabled) > a:hover,
+.app-bar.#ffc0cb .app-bar-element .d-menu li > a:hover,
+.app-bar.#ffc0cb .app-bar-menu > li .d-menu li > a:hover {
+  background-color: #9a165a;
+  color: #ffffff;
+}
+.app-bar.#ffc0cb .app-bar-element .d-menu li:hover > a,
+.app-bar.#ffc0cb .app-bar-menu > li .d-menu li:hover > a {
+  background-color: #9a165a;
+}
+.app-bar.#ffc0cb .app-bar-element .d-menu .divider,
+.app-bar.#ffc0cb .app-bar-menu > li .d-menu .divider {
+  background-color: #f472d0;
+}
+.app-bar.#ffc0cb .app-bar-element .d-menu .divider:hover,
+.app-bar.#ffc0cb .app-bar-menu > li .d-menu .divider:hover {
+  background-color: #f472d0;
+}
+.app-bar.#ffc0cb .app-bar-element .dropdown-toggle:before,
+.app-bar.#ffc0cb .app-bar-menu li .dropdown-toggle:before {
+  border-color: #ffffff;
+}
+.app-bar.#ffc0cb .app-bar-element.disabled,
+.app-bar.#ffc0cb .app-bar-menu li.disabled,
+.app-bar.#ffc0cb .app-bar-element:disabled,
+.app-bar.#ffc0cb .app-bar-menu li:disabled {
+  color: #555555;
+}
+.app-bar.#ffc0cb .app-bar-element.disabled a,
+.app-bar.#ffc0cb .app-bar-menu li.disabled a,
+.app-bar.#ffc0cb .app-bar-element:disabled a,
+.app-bar.#ffc0cb .app-bar-menu li:disabled a {
+  color: inherit !important;
+}
+.app-bar.#ffc0cb .app-bar-pullbutton:hover {
+  background-color: #9a165a;
+}
+.app-bar.#ffc0cb .app-bar-drop-container {
+  border: 2px solid #dc4fad;
+  background-color: #dc4fad;
+  color: #ffffff;
+}
+.app-bar.#ffc0cb .app-bar-drop-container:before {
+  background-color: #dc4fad;
+  border-color: #dc4fad;
+}
+.app-bar.#ffc0cb .app-bar-pullmenu .app-bar-menu {
+  border-top: 1px solid #f472d0;
+  background-color: #f472d0;
+}
+.app-bar.#ffc0cb .app-bar-pullmenu .app-bar-menu li:hover {
+  background-color: #dc4fad;
+}
+.app-bar.#ffc0cb .app-bar-pullmenu .app-bar-menu li:hover a {
+  background-color: #9a165a;
+  color: #ffffff;
+}
+.app-bar.darcula {
+  background-color: #3c3f41;
+}
+.app-bar.darcula .app-bar-element:hover,
+.app-bar.darcula .app-bar-menu > li:hover,
+.app-bar.darcula .app-bar-menu > li > a:hover,
+.app-bar.darcula .app-bar-element:active,
+.app-bar.darcula .app-bar-menu > li:active,
+.app-bar.darcula .app-bar-menu > li > a:active {
+  background-color: #1d1d1d;
+}
+.app-bar.darcula .app-bar-divider {
+  background-color: #616162;
+}
+.app-bar.darcula .app-bar-element .d-menu,
+.app-bar.darcula .app-bar-menu > li .d-menu {
+  background-color: #3c3f41;
+  border-color: transparent;
+}
+.app-bar.darcula .app-bar-element .d-menu li:not(.disabled) > a,
+.app-bar.darcula .app-bar-menu > li .d-menu li:not(.disabled) > a,
+.app-bar.darcula .app-bar-element .d-menu li > a,
+.app-bar.darcula .app-bar-menu > li .d-menu li > a {
+  background-color: #3c3f41;
+  color: #ffffff;
+}
+.app-bar.darcula .app-bar-element .d-menu li:not(.disabled) > a:hover,
+.app-bar.darcula .app-bar-menu > li .d-menu li:not(.disabled) > a:hover,
+.app-bar.darcula .app-bar-element .d-menu li > a:hover,
+.app-bar.darcula .app-bar-menu > li .d-menu li > a:hover {
+  background-color: #1d1d1d;
+  color: #ffffff;
+}
+.app-bar.darcula .app-bar-element .d-menu li:hover > a,
+.app-bar.darcula .app-bar-menu > li .d-menu li:hover > a {
+  background-color: #1d1d1d;
+}
+.app-bar.darcula .app-bar-element .d-menu .divider,
+.app-bar.darcula .app-bar-menu > li .d-menu .divider {
+  background-color: #616162;
+}
+.app-bar.darcula .app-bar-element .d-menu .divider:hover,
+.app-bar.darcula .app-bar-menu > li .d-menu .divider:hover {
+  background-color: #616162;
+}
+.app-bar.darcula .app-bar-element .dropdown-toggle:before,
+.app-bar.darcula .app-bar-menu li .dropdown-toggle:before {
+  border-color: #ffffff;
+}
+.app-bar.darcula .app-bar-element.disabled,
+.app-bar.darcula .app-bar-menu li.disabled,
+.app-bar.darcula .app-bar-element:disabled,
+.app-bar.darcula .app-bar-menu li:disabled {
+  color: #555555;
+}
+.app-bar.darcula .app-bar-element.disabled a,
+.app-bar.darcula .app-bar-menu li.disabled a,
+.app-bar.darcula .app-bar-element:disabled a,
+.app-bar.darcula .app-bar-menu li:disabled a {
+  color: inherit !important;
+}
+.app-bar.darcula .app-bar-pullbutton:hover {
+  background-color: #1d1d1d;
+}
+.app-bar.darcula .app-bar-drop-container {
+  border: 2px solid #3c3f41;
+  background-color: #3c3f41;
+  color: #ffffff;
+}
+.app-bar.darcula .app-bar-drop-container:before {
+  background-color: #3c3f41;
+  border-color: #3c3f41;
+}
+.app-bar.darcula .app-bar-pullmenu .app-bar-menu {
+  border-top: 1px solid #616162;
+  background-color: #616162;
+}
+.app-bar.darcula .app-bar-pullmenu .app-bar-menu li:hover {
+  background-color: #3c3f41;
+}
+.app-bar.darcula .app-bar-pullmenu .app-bar-menu li:hover a {
+  background-color: #1d1d1d;
+  color: #ffffff;
+}
+.app-bar.#000080 {
+  background-color: #0072c6;
+}
+.app-bar.#000080 .app-bar-element:hover,
+.app-bar.#000080 .app-bar-menu > li:hover,
+.app-bar.#000080 .app-bar-menu > li > a:hover,
+.app-bar.#000080 .app-bar-element:active,
+.app-bar.#000080 .app-bar-menu > li:active,
+.app-bar.#000080 .app-bar-menu > li > a:active {
+  background-color: #005696;
+}
+.app-bar.#000080 .app-bar-divider {
+  background-color: #4c9cd7;
+}
+.app-bar.#000080 .app-bar-element .d-menu,
+.app-bar.#000080 .app-bar-menu > li .d-menu {
+  background-color: #0072c6;
+  border-color: transparent;
+}
+.app-bar.#000080 .app-bar-element .d-menu li:not(.disabled) > a,
+.app-bar.#000080 .app-bar-menu > li .d-menu li:not(.disabled) > a,
+.app-bar.#000080 .app-bar-element .d-menu li > a,
+.app-bar.#000080 .app-bar-menu > li .d-menu li > a {
+  background-color: #0072c6;
+  color: #ffffff;
+}
+.app-bar.#000080 .app-bar-element .d-menu li:not(.disabled) > a:hover,
+.app-bar.#000080 .app-bar-menu > li .d-menu li:not(.disabled) > a:hover,
+.app-bar.#000080 .app-bar-element .d-menu li > a:hover,
+.app-bar.#000080 .app-bar-menu > li .d-menu li > a:hover {
+  background-color: #005696;
+  color: #ffffff;
+}
+.app-bar.#000080 .app-bar-element .d-menu li:hover > a,
+.app-bar.#000080 .app-bar-menu > li .d-menu li:hover > a {
+  background-color: #005696;
+}
+.app-bar.#000080 .app-bar-element .d-menu .divider,
+.app-bar.#000080 .app-bar-menu > li .d-menu .divider {
+  background-color: #4c9cd7;
+}
+.app-bar.#000080 .app-bar-element .d-menu .divider:hover,
+.app-bar.#000080 .app-bar-menu > li .d-menu .divider:hover {
+  background-color: #4c9cd7;
+}
+.app-bar.#000080 .app-bar-element .dropdown-toggle:before,
+.app-bar.#000080 .app-bar-menu li .dropdown-toggle:before {
+  border-color: #ffffff;
+}
+.app-bar.#000080 .app-bar-element.disabled,
+.app-bar.#000080 .app-bar-menu li.disabled,
+.app-bar.#000080 .app-bar-element:disabled,
+.app-bar.#000080 .app-bar-menu li:disabled {
+  color: #555555;
+}
+.app-bar.#000080 .app-bar-element.disabled a,
+.app-bar.#000080 .app-bar-menu li.disabled a,
+.app-bar.#000080 .app-bar-element:disabled a,
+.app-bar.#000080 .app-bar-menu li:disabled a {
+  color: inherit !important;
+}
+.app-bar.#000080 .app-bar-pullbutton:hover {
+  background-color: #005696;
+}
+.app-bar.#000080 .app-bar-drop-container {
+  border: 2px solid #0072c6;
+  background-color: #0072c6;
+  color: #ffffff;
+}
+.app-bar.#000080 .app-bar-drop-container:before {
+  background-color: #0072c6;
+  border-color: #0072c6;
+}
+.app-bar.#000080 .app-bar-pullmenu .app-bar-menu {
+  border-top: 1px solid #4c9cd7;
+  background-color: #4c9cd7;
+}
+.app-bar.#000080 .app-bar-pullmenu .app-bar-menu li:hover {
+  background-color: #0072c6;
+}
+.app-bar.#000080 .app-bar-pullmenu .app-bar-menu li:hover a {
+  background-color: #005696;
+  color: #ffffff;
+}
+.app-bar.#ff0000 {
+  background-color: #ce352c;
+}
+.app-bar.#ff0000 .app-bar-element:hover,
+.app-bar.#ff0000 .app-bar-menu > li:hover,
+.app-bar.#ff0000 .app-bar-menu > li > a:hover,
+.app-bar.#ff0000 .app-bar-element:active,
+.app-bar.#ff0000 .app-bar-menu > li:active,
+.app-bar.#ff0000 .app-bar-menu > li > a:active {
+  background-color: #9a1616;
+}
+.app-bar.#ff0000 .app-bar-divider {
+  background-color: #da5a53;
+}
+.app-bar.#ff0000 .app-bar-element .d-menu,
+.app-bar.#ff0000 .app-bar-menu > li .d-menu {
+  background-color: #ce352c;
+  border-color: transparent;
+}
+.app-bar.#ff0000 .app-bar-element .d-menu li:not(.disabled) > a,
+.app-bar.#ff0000 .app-bar-menu > li .d-menu li:not(.disabled) > a,
+.app-bar.#ff0000 .app-bar-element .d-menu li > a,
+.app-bar.#ff0000 .app-bar-menu > li .d-menu li > a {
+  background-color: #ce352c;
+  color: #ffffff;
+}
+.app-bar.#ff0000 .app-bar-element .d-menu li:not(.disabled) > a:hover,
+.app-bar.#ff0000 .app-bar-menu > li .d-menu li:not(.disabled) > a:hover,
+.app-bar.#ff0000 .app-bar-element .d-menu li > a:hover,
+.app-bar.#ff0000 .app-bar-menu > li .d-menu li > a:hover {
+  background-color: #9a1616;
+  color: #ffffff;
+}
+.app-bar.#ff0000 .app-bar-element .d-menu li:hover > a,
+.app-bar.#ff0000 .app-bar-menu > li .d-menu li:hover > a {
+  background-color: #9a1616;
+}
+.app-bar.#ff0000 .app-bar-element .d-menu .divider,
+.app-bar.#ff0000 .app-bar-menu > li .d-menu .divider {
+  background-color: #da5a53;
+}
+.app-bar.#ff0000 .app-bar-element .d-menu .divider:hover,
+.app-bar.#ff0000 .app-bar-menu > li .d-menu .divider:hover {
+  background-color: #da5a53;
+}
+.app-bar.#ff0000 .app-bar-element .dropdown-toggle:before,
+.app-bar.#ff0000 .app-bar-menu li .dropdown-toggle:before {
+  border-color: #ffffff;
+}
+.app-bar.#ff0000 .app-bar-element.disabled,
+.app-bar.#ff0000 .app-bar-menu li.disabled,
+.app-bar.#ff0000 .app-bar-element:disabled,
+.app-bar.#ff0000 .app-bar-menu li:disabled {
+  color: #555555;
+}
+.app-bar.#ff0000 .app-bar-element.disabled a,
+.app-bar.#ff0000 .app-bar-menu li.disabled a,
+.app-bar.#ff0000 .app-bar-element:disabled a,
+.app-bar.#ff0000 .app-bar-menu li:disabled a {
+  color: inherit !important;
+}
+.app-bar.#ff0000 .app-bar-pullbutton:hover {
+  background-color: #9a1616;
+}
+.app-bar.#ff0000 .app-bar-drop-container {
+  border: 2px solid #ce352c;
+  background-color: #ce352c;
+  color: #ffffff;
+}
+.app-bar.#ff0000 .app-bar-drop-container:before {
+  background-color: #ce352c;
+  border-color: #ce352c;
+}
+.app-bar.#ff0000 .app-bar-pullmenu .app-bar-menu {
+  border-top: 1px solid #da5a53;
+  background-color: #da5a53;
+}
+.app-bar.#ff0000 .app-bar-pullmenu .app-bar-menu li:hover {
+  background-color: #ce352c;
+}
+.app-bar.#ff0000 .app-bar-pullmenu .app-bar-menu li:hover a {
+  background-color: #9a1616;
+  color: #ffffff;
+}
+.app-bar.#008000 {
+  background-color: #60a917;
+}
+.app-bar.#008000 .app-bar-element:hover,
+.app-bar.#008000 .app-bar-menu > li:hover,
+.app-bar.#008000 .app-bar-menu > li > a:hover,
+.app-bar.#008000 .app-bar-element:active,
+.app-bar.#008000 .app-bar-menu > li:active,
+.app-bar.#008000 .app-bar-menu > li > a:active {
+  background-color: #128023;
+}
+.app-bar.#008000 .app-bar-divider {
+  background-color: #7ad61d;
+}
+.app-bar.#008000 .app-bar-element .d-menu,
+.app-bar.#008000 .app-bar-menu > li .d-menu {
+  background-color: #60a917;
+  border-color: transparent;
+}
+.app-bar.#008000 .app-bar-element .d-menu li:not(.disabled) > a,
+.app-bar.#008000 .app-bar-menu > li .d-menu li:not(.disabled) > a,
+.app-bar.#008000 .app-bar-element .d-menu li > a,
+.app-bar.#008000 .app-bar-menu > li .d-menu li > a {
+  background-color: #60a917;
+  color: #ffffff;
+}
+.app-bar.#008000 .app-bar-element .d-menu li:not(.disabled) > a:hover,
+.app-bar.#008000 .app-bar-menu > li .d-menu li:not(.disabled) > a:hover,
+.app-bar.#008000 .app-bar-element .d-menu li > a:hover,
+.app-bar.#008000 .app-bar-menu > li .d-menu li > a:hover {
+  background-color: #128023;
+  color: #ffffff;
+}
+.app-bar.#008000 .app-bar-element .d-menu li:hover > a,
+.app-bar.#008000 .app-bar-menu > li .d-menu li:hover > a {
+  background-color: #128023;
+}
+.app-bar.#008000 .app-bar-element .d-menu .divider,
+.app-bar.#008000 .app-bar-menu > li .d-menu .divider {
+  background-color: #7ad61d;
+}
+.app-bar.#008000 .app-bar-element .d-menu .divider:hover,
+.app-bar.#008000 .app-bar-menu > li .d-menu .divider:hover {
+  background-color: #7ad61d;
+}
+.app-bar.#008000 .app-bar-element .dropdown-toggle:before,
+.app-bar.#008000 .app-bar-menu li .dropdown-toggle:before {
+  border-color: #ffffff;
+}
+.app-bar.#008000 .app-bar-element.disabled,
+.app-bar.#008000 .app-bar-menu li.disabled,
+.app-bar.#008000 .app-bar-element:disabled,
+.app-bar.#008000 .app-bar-menu li:disabled {
+  color: #555555;
+}
+.app-bar.#008000 .app-bar-element.disabled a,
+.app-bar.#008000 .app-bar-menu li.disabled a,
+.app-bar.#008000 .app-bar-element:disabled a,
+.app-bar.#008000 .app-bar-menu li:disabled a {
+  color: inherit !important;
+}
+.app-bar.#008000 .app-bar-pullbutton:hover {
+  background-color: #128023;
+}
+.app-bar.#008000 .app-bar-drop-container {
+  border: 2px solid #60a917;
+  background-color: #60a917;
+  color: #ffffff;
+}
+.app-bar.#008000 .app-bar-drop-container:before {
+  background-color: #60a917;
+  border-color: #60a917;
+}
+.app-bar.#008000 .app-bar-pullmenu .app-bar-menu {
+  border-top: 1px solid #7ad61d;
+  background-color: #7ad61d;
+}
+.app-bar.#008000 .app-bar-pullmenu .app-bar-menu li:hover {
+  background-color: #60a917;
+}
+.app-bar.#008000 .app-bar-pullmenu .app-bar-menu li:hover a {
+  background-color: #128023;
+  color: #ffffff;
+}
+.app-bar.#ffa500 {
+  background-color: #fa6800;
+}
+.app-bar.#ffa500 .app-bar-element:hover,
+.app-bar.#ffa500 .app-bar-menu > li:hover,
+.app-bar.#ffa500 .app-bar-menu > li > a:hover,
+.app-bar.#ffa500 .app-bar-element:active,
+.app-bar.#ffa500 .app-bar-menu > li:active,
+.app-bar.#ffa500 .app-bar-menu > li > a:active {
+  background-color: #bf5a15;
+}
+.app-bar.#ffa500 .app-bar-divider {
+  background-color: #ffc194;
+}
+.app-bar.#ffa500 .app-bar-element .d-menu,
+.app-bar.#ffa500 .app-bar-menu > li .d-menu {
+  background-color: #fa6800;
+  border-color: transparent;
+}
+.app-bar.#ffa500 .app-bar-element .d-menu li:not(.disabled) > a,
+.app-bar.#ffa500 .app-bar-menu > li .d-menu li:not(.disabled) > a,
+.app-bar.#ffa500 .app-bar-element .d-menu li > a,
+.app-bar.#ffa500 .app-bar-menu > li .d-menu li > a {
+  background-color: #fa6800;
+  color: #ffffff;
+}
+.app-bar.#ffa500 .app-bar-element .d-menu li:not(.disabled) > a:hover,
+.app-bar.#ffa500 .app-bar-menu > li .d-menu li:not(.disabled) > a:hover,
+.app-bar.#ffa500 .app-bar-element .d-menu li > a:hover,
+.app-bar.#ffa500 .app-bar-menu > li .d-menu li > a:hover {
+  background-color: #bf5a15;
+  color: #ffffff;
+}
+.app-bar.#ffa500 .app-bar-element .d-menu li:hover > a,
+.app-bar.#ffa500 .app-bar-menu > li .d-menu li:hover > a {
+  background-color: #bf5a15;
+}
+.app-bar.#ffa500 .app-bar-element .d-menu .divider,
+.app-bar.#ffa500 .app-bar-menu > li .d-menu .divider {
+  background-color: #ffc194;
+}
+.app-bar.#ffa500 .app-bar-element .d-menu .divider:hover,
+.app-bar.#ffa500 .app-bar-menu > li .d-menu .divider:hover {
+  background-color: #ffc194;
+}
+.app-bar.#ffa500 .app-bar-element .dropdown-toggle:before,
+.app-bar.#ffa500 .app-bar-menu li .dropdown-toggle:before {
+  border-color: #ffffff;
+}
+.app-bar.#ffa500 .app-bar-element.disabled,
+.app-bar.#ffa500 .app-bar-menu li.disabled,
+.app-bar.#ffa500 .app-bar-element:disabled,
+.app-bar.#ffa500 .app-bar-menu li:disabled {
+  color: #555555;
+}
+.app-bar.#ffa500 .app-bar-element.disabled a,
+.app-bar.#ffa500 .app-bar-menu li.disabled a,
+.app-bar.#ffa500 .app-bar-element:disabled a,
+.app-bar.#ffa500 .app-bar-menu li:disabled a {
+  color: inherit !important;
+}
+.app-bar.#ffa500 .app-bar-pullbutton:hover {
+  background-color: #bf5a15;
+}
+.app-bar.#ffa500 .app-bar-drop-container {
+  border: 2px solid #fa6800;
+  background-color: #fa6800;
+  color: #ffffff;
+}
+.app-bar.#ffa500 .app-bar-drop-container:before {
+  background-color: #fa6800;
+  border-color: #fa6800;
+}
+.app-bar.#ffa500 .app-bar-pullmenu .app-bar-menu {
+  border-top: 1px solid #ffc194;
+  background-color: #ffc194;
+}
+.app-bar.#ffa500 .app-bar-pullmenu .app-bar-menu li:hover {
+  background-color: #fa6800;
+}
+.app-bar.#ffa500 .app-bar-pullmenu .app-bar-menu li:hover a {
+  background-color: #bf5a15;
+  color: #ffffff;
+}
+/*
+* params: name, background, backgroundHover, item, itemHover, itemDisabled, divider, dropdown-toggle
+*/
+.v-menu.darcula,
+.d-menu.darcula {
+  background: #3c3f41;
+}
+.v-menu.darcula li > a,
+.d-menu.darcula li > a {
+  background: #3c3f41;
+  color: #ffffff;
+}
+.v-menu.darcula li > a .icon,
+.d-menu.darcula li > a .icon {
+  color: #cccccc;
+}
+.v-menu.darcula li > a:hover,
+.d-menu.darcula li > a:hover {
+  background: #1d1d1d;
+  color: #ffffff;
+}
+.v-menu.darcula li > a:hover .icon,
+.d-menu.darcula li > a:hover .icon {
+  color: #ffffff;
+}
+.v-menu.darcula li > .item-block,
+.d-menu.darcula li > .item-block {
+  background: #484c4e;
+}
+.v-menu.darcula li.disabled > a,
+.d-menu.darcula li.disabled > a {
+  background: #3c3f41;
+  color: #555555;
+}
+.v-menu.darcula li > a.dropdown-toggle:before,
+.d-menu.darcula li > a.dropdown-toggle:before {
+  border-color: #ffffff;
+}
+.v-menu.darcula li.menu-title,
+.d-menu.darcula li.menu-title {
+  background: #303234;
+  color: #cccccc;
+}
+.v-menu.darcula li.divider,
+.d-menu.darcula li.divider {
+  background: #616162;
+}
+.v-menu.#ffc0cb,
+.d-menu.#ffc0cb {
+  background: #dc4fad;
+}
+.v-menu.#ffc0cb li > a,
+.d-menu.#ffc0cb li > a {
+  background: #dc4fad;
+  color: #ffffff;
+}
+.v-menu.#ffc0cb li > a .icon,
+.d-menu.#ffc0cb li > a .icon {
+  color: #cccccc;
+}
+.v-menu.#ffc0cb li > a:hover,
+.d-menu.#ffc0cb li > a:hover {
+  background: #9a165a;
+  color: #ffffff;
+}
+.v-menu.#ffc0cb li > a:hover .icon,
+.d-menu.#ffc0cb li > a:hover .icon {
+  color: #ffffff;
+}
+.v-menu.#ffc0cb li > .item-block,
+.d-menu.#ffc0cb li > .item-block {
+  background: #e064b7;
+}
+.v-menu.#ffc0cb li.disabled > a,
+.d-menu.#ffc0cb li.disabled > a {
+  background: #dc4fad;
+  color: #555555;
+}
+.v-menu.#ffc0cb li > a.dropdown-toggle:before,
+.d-menu.#ffc0cb li > a.dropdown-toggle:before {
+  border-color: #ffffff;
+}
+.v-menu.#ffc0cb li.menu-title,
+.d-menu.#ffc0cb li.menu-title {
+  background: #d83aa3;
+  color: #cccccc;
+}
+.v-menu.#ffc0cb li.divider,
+.d-menu.#ffc0cb li.divider {
+  background: #f472d0;
+}
+.v-menu.#000080,
+.d-menu.#000080 {
+  background: #0072c6;
+}
+.v-menu.#000080 li > a,
+.d-menu.#000080 li > a {
+  background: #0072c6;
+  color: #ffffff;
+}
+.v-menu.#000080 li > a .icon,
+.d-menu.#000080 li > a .icon {
+  color: #cccccc;
+}
+.v-menu.#000080 li > a:hover,
+.d-menu.#000080 li > a:hover {
+  background: #005696;
+  color: #ffffff;
+}
+.v-menu.#000080 li > a:hover .icon,
+.d-menu.#000080 li > a:hover .icon {
+  color: #ffffff;
+}
+.v-menu.#000080 li > .item-block,
+.d-menu.#000080 li > .item-block {
+  background: #0081e0;
+}
+.v-menu.#000080 li.disabled > a,
+.d-menu.#000080 li.disabled > a {
+  background: #0072c6;
+  color: #555555;
+}
+.v-menu.#000080 li > a.dropdown-toggle:before,
+.d-menu.#000080 li > a.dropdown-toggle:before {
+  border-color: #ffffff;
+}
+.v-menu.#000080 li.menu-title,
+.d-menu.#000080 li.menu-title {
+  background: #0063ad;
+  color: #cccccc;
+}
+.v-menu.#000080 li.divider,
+.d-menu.#000080 li.divider {
+  background: #4c9cd7;
+}
+.v-menu.#ff0000,
+.d-menu.#ff0000 {
+  background: #ce352c;
+}
+.v-menu.#ff0000 li > a,
+.d-menu.#ff0000 li > a {
+  background: #ce352c;
+  color: #ffffff;
+}
+.v-menu.#ff0000 li > a .icon,
+.d-menu.#ff0000 li > a .icon {
+  color: #cccccc;
+}
+.v-menu.#ff0000 li > a:hover,
+.d-menu.#ff0000 li > a:hover {
+  background: #9a1616;
+  color: #ffffff;
+}
+.v-menu.#ff0000 li > a:hover .icon,
+.d-menu.#ff0000 li > a:hover .icon {
+  color: #ffffff;
+}
+.v-menu.#ff0000 li > .item-block,
+.d-menu.#ff0000 li > .item-block {
+  background: #d6463e;
+}
+.v-menu.#ff0000 li.disabled > a,
+.d-menu.#ff0000 li.disabled > a {
+  background: #ce352c;
+  color: #555555;
+}
+.v-menu.#ff0000 li > a.dropdown-toggle:before,
+.d-menu.#ff0000 li > a.dropdown-toggle:before {
+  border-color: #ffffff;
+}
+.v-menu.#ff0000 li.menu-title,
+.d-menu.#ff0000 li.menu-title {
+  background: #b93028;
+  color: #cccccc;
+}
+.v-menu.#ff0000 li.divider,
+.d-menu.#ff0000 li.divider {
+  background: #da5a53;
+}
+.v-menu.#008000,
+.d-menu.#008000 {
+  background: #60a917;
+}
+.v-menu.#008000 li > a,
+.d-menu.#008000 li > a {
+  background: #60a917;
+  color: #ffffff;
+}
+.v-menu.#008000 li > a .icon,
+.d-menu.#008000 li > a .icon {
+  color: #cccccc;
+}
+.v-menu.#008000 li > a:hover,
+.d-menu.#008000 li > a:hover {
+  background: #128023;
+  color: #ffffff;
+}
+.v-menu.#008000 li > a:hover .icon,
+.d-menu.#008000 li > a:hover .icon {
+  color: #ffffff;
+}
+.v-menu.#008000 li > .item-block,
+.d-menu.#008000 li > .item-block {
+  background: #6dbf1a;
+}
+.v-menu.#008000 li.disabled > a,
+.d-menu.#008000 li.disabled > a {
+  background: #60a917;
+  color: #555555;
+}
+.v-menu.#008000 li > a.dropdown-toggle:before,
+.d-menu.#008000 li > a.dropdown-toggle:before {
+  border-color: #ffffff;
+}
+.v-menu.#008000 li.menu-title,
+.d-menu.#008000 li.menu-title {
+  background: #539314;
+  color: #cccccc;
+}
+.v-menu.#008000 li.divider,
+.d-menu.#008000 li.divider {
+  background: #7ad61d;
+}
+.v-menu.#ffa500,
+.d-menu.#ffa500 {
+  background: #fa6800;
+}
+.v-menu.#ffa500 li > a,
+.d-menu.#ffa500 li > a {
+  background: #fa6800;
+  color: #ffffff;
+}
+.v-menu.#ffa500 li > a .icon,
+.d-menu.#ffa500 li > a .icon {
+  color: #cccccc;
+}
+.v-menu.#ffa500 li > a:hover,
+.d-menu.#ffa500 li > a:hover {
+  background: #bf5a15;
+  color: #ffffff;
+}
+.v-menu.#ffa500 li > a:hover .icon,
+.d-menu.#ffa500 li > a:hover .icon {
+  color: #ffffff;
+}
+.v-menu.#ffa500 li > .item-block,
+.d-menu.#ffa500 li > .item-block {
+  background: #ff7615;
+}
+.v-menu.#ffa500 li.disabled > a,
+.d-menu.#ffa500 li.disabled > a {
+  background: #fa6800;
+  color: #555555;
+}
+.v-menu.#ffa500 li > a.dropdown-toggle:before,
+.d-menu.#ffa500 li > a.dropdown-toggle:before {
+  border-color: #ffffff;
+}
+.v-menu.#ffa500 li.menu-title,
+.d-menu.#ffa500 li.menu-title {
+  background: #e15d00;
+  color: #cccccc;
+}
+.v-menu.#ffa500 li.divider,
+.d-menu.#ffa500 li.divider {
+  background: #ffc194;
+}
+/*
+* params: name, background, backgroundHover, item, itemHover, itemDisabled, divider, dropdown-toggle
+*/
+.t-menu.darcula {
+  background-color: #3c3f41;
+}
+.t-menu.darcula .t-menu {
+  background-color: #3c3f41;
+}
+.t-menu.darcula li > a {
+  background: #3c3f41;
+  color: #ffffff;
+  border-bottom-color: #616162;
+}
+.t-menu.darcula li > a.dropdown-toggle:after,
+.t-menu.darcula li > a.dropdown-toggle:hover:after {
+  border-color: transparent transparent #ffffff;
+}
+.t-menu.darcula li:hover > a {
+  background: #1d1d1d;
+  color: #ffffff;
+}
+.t-menu.darcula li:hover > a.dropdown-toggle:after {
+  border-color: transparent transparent #ffffff;
+}
+.t-menu.darcula li.disabled > a {
+  background: #3c3f41;
+  color: #555555;
+}
+.t-menu.darcula li.disabled > a:hover {
+  background: #3c3f41;
+}
+.t-menu.darcula.horizontal > li > a,
+.t-menu.darcula .horizontal > li > a {
+  border-right-color: #616162;
+}
+.t-menu.#ffc0cb {
+  background-color: #dc4fad;
+}
+.t-menu.#ffc0cb .t-menu {
+  background-color: #dc4fad;
+}
+.t-menu.#ffc0cb li > a {
+  background: #dc4fad;
+  color: #ffffff;
+  border-bottom-color: #f472d0;
+}
+.t-menu.#ffc0cb li > a.dropdown-toggle:after,
+.t-menu.#ffc0cb li > a.dropdown-toggle:hover:after {
+  border-color: transparent transparent #ffffff;
+}
+.t-menu.#ffc0cb li:hover > a {
+  background: #9a165a;
+  color: #ffffff;
+}
+.t-menu.#ffc0cb li:hover > a.dropdown-toggle:after {
+  border-color: transparent transparent #ffffff;
+}
+.t-menu.#ffc0cb li.disabled > a {
+  background: #dc4fad;
+  color: #555555;
+}
+.t-menu.#ffc0cb li.disabled > a:hover {
+  background: #dc4fad;
+}
+.t-menu.#ffc0cb.horizontal > li > a,
+.t-menu.#ffc0cb .horizontal > li > a {
+  border-right-color: #f472d0;
+}
+.t-menu.#000080 {
+  background-color: #0072c6;
+}
+.t-menu.#000080 .t-menu {
+  background-color: #0072c6;
+}
+.t-menu.#000080 li > a {
+  background: #0072c6;
+  color: #ffffff;
+  border-bottom-color: #4c9cd7;
+}
+.t-menu.#000080 li > a.dropdown-toggle:after,
+.t-menu.#000080 li > a.dropdown-toggle:hover:after {
+  border-color: transparent transparent #ffffff;
+}
+.t-menu.#000080 li:hover > a {
+  background: #005696;
+  color: #ffffff;
+}
+.t-menu.#000080 li:hover > a.dropdown-toggle:after {
+  border-color: transparent transparent #ffffff;
+}
+.t-menu.#000080 li.disabled > a {
+  background: #0072c6;
+  color: #555555;
+}
+.t-menu.#000080 li.disabled > a:hover {
+  background: #0072c6;
+}
+.t-menu.#000080.horizontal > li > a,
+.t-menu.#000080 .horizontal > li > a {
+  border-right-color: #4c9cd7;
+}
+.t-menu.#ff0000 {
+  background-color: #ce352c;
+}
+.t-menu.#ff0000 .t-menu {
+  background-color: #ce352c;
+}
+.t-menu.#ff0000 li > a {
+  background: #ce352c;
+  color: #ffffff;
+  border-bottom-color: #da5a53;
+}
+.t-menu.#ff0000 li > a.dropdown-toggle:after,
+.t-menu.#ff0000 li > a.dropdown-toggle:hover:after {
+  border-color: transparent transparent #ffffff;
+}
+.t-menu.#ff0000 li:hover > a {
+  background: #9a1616;
+  color: #ffffff;
+}
+.t-menu.#ff0000 li:hover > a.dropdown-toggle:after {
+  border-color: transparent transparent #ffffff;
+}
+.t-menu.#ff0000 li.disabled > a {
+  background: #ce352c;
+  color: #555555;
+}
+.t-menu.#ff0000 li.disabled > a:hover {
+  background: #ce352c;
+}
+.t-menu.#ff0000.horizontal > li > a,
+.t-menu.#ff0000 .horizontal > li > a {
+  border-right-color: #da5a53;
+}
+.t-menu.#008000 {
+  background-color: #60a917;
+}
+.t-menu.#008000 .t-menu {
+  background-color: #60a917;
+}
+.t-menu.#008000 li > a {
+  background: #60a917;
+  color: #ffffff;
+  border-bottom-color: #7ad61d;
+}
+.t-menu.#008000 li > a.dropdown-toggle:after,
+.t-menu.#008000 li > a.dropdown-toggle:hover:after {
+  border-color: transparent transparent #ffffff;
+}
+.t-menu.#008000 li:hover > a {
+  background: #128023;
+  color: #ffffff;
+}
+.t-menu.#008000 li:hover > a.dropdown-toggle:after {
+  border-color: transparent transparent #ffffff;
+}
+.t-menu.#008000 li.disabled > a {
+  background: #60a917;
+  color: #555555;
+}
+.t-menu.#008000 li.disabled > a:hover {
+  background: #60a917;
+}
+.t-menu.#008000.horizontal > li > a,
+.t-menu.#008000 .horizontal > li > a {
+  border-right-color: #7ad61d;
+}
+.t-menu.#ffa500 {
+  background-color: #fa6800;
+}
+.t-menu.#ffa500 .t-menu {
+  background-color: #fa6800;
+}
+.t-menu.#ffa500 li > a {
+  background: #fa6800;
+  color: #ffffff;
+  border-bottom-color: #ffc194;
+}
+.t-menu.#ffa500 li > a.dropdown-toggle:after,
+.t-menu.#ffa500 li > a.dropdown-toggle:hover:after {
+  border-color: transparent transparent #ffffff;
+}
+.t-menu.#ffa500 li:hover > a {
+  background: #bf5a15;
+  color: #ffffff;
+}
+.t-menu.#ffa500 li:hover > a.dropdown-toggle:after {
+  border-color: transparent transparent #ffffff;
+}
+.t-menu.#ffa500 li.disabled > a {
+  background: #fa6800;
+  color: #555555;
+}
+.t-menu.#ffa500 li.disabled > a:hover {
+  background: #fa6800;
+}
+.t-menu.#ffa500.horizontal > li > a,
+.t-menu.#ffa500 .horizontal > li > a {
+  border-right-color: #ffc194;
+}
+/*
+* params: name, background, backgroundHover, backgroundActive, item, itemHover, itemActive, itemDisabled
+*/
+.sidebar.darcula {
+  background: #3c3f41;
+}
+.sidebar.darcula li > a {
+  background: #3c3f41;
+  color: #ffffff;
+}
+.sidebar.darcula li:hover > a {
+  background: #4d5154;
+  color: #ffffff;
+}
+.sidebar.darcula li.active > a {
+  background: #1d1d1d;
+  color: #ffffff;
+}
+.sidebar.darcula li.disabled > a {
+  background: #3c3f41;
+  color: #555555;
+}
+.sidebar.#ffc0cb {
+  background: #dc4fad;
+}
+.sidebar.#ffc0cb li > a {
+  background: #dc4fad;
+  color: #ffffff;
+}
+.sidebar.#ffc0cb li:hover > a {
+  background: #b91a6c;
+  color: #ffffff;
+}
+.sidebar.#ffc0cb li.active > a {
+  background: #9a165a;
+  color: #ffffff;
+}
+.sidebar.#ffc0cb li.disabled > a {
+  background: #dc4fad;
+  color: #555555;
+}
+.sidebar.#000080 {
+  background: #0072c6;
+}
+.sidebar.#000080 li > a {
+  background: #0072c6;
+  color: #ffffff;
+}
+.sidebar.#000080 li:hover > a {
+  background: #006aba;
+  color: #ffffff;
+}
+.sidebar.#000080 li.active > a {
+  background: #005696;
+  color: #ffffff;
+}
+.sidebar.#000080 li.disabled > a {
+  background: #0072c6;
+  color: #555555;
+}
+.sidebar.#ff0000 {
+  background: #ce352c;
+}
+.sidebar.#ff0000 li > a {
+  background: #ce352c;
+  color: #ffffff;
+}
+.sidebar.#ff0000 li:hover > a {
+  background: #b91a1a;
+  color: #ffffff;
+}
+.sidebar.#ff0000 li.active > a {
+  background: #9a1616;
+  color: #ffffff;
+}
+.sidebar.#ff0000 li.disabled > a {
+  background: #ce352c;
+  color: #555555;
+}
+.sidebar.#008000 {
+  background: #60a917;
+}
+.sidebar.#008000 li > a {
+  background: #60a917;
+  color: #ffffff;
+}
+.sidebar.#008000 li:hover > a {
+  background: #169f2c;
+  color: #ffffff;
+}
+.sidebar.#008000 li.active > a {
+  background: #128023;
+  color: #ffffff;
+}
+.sidebar.#008000 li.disabled > a {
+  background: #60a917;
+  color: #555555;
+}
+.sidebar.#ffa500 {
+  background: #fa6800;
+}
+.sidebar.#ffa500 li > a {
+  background: #fa6800;
+  color: #ffffff;
+}
+.sidebar.#ffa500 li:hover > a {
+  background: #df6919;
+  color: #ffffff;
+}
+.sidebar.#ffa500 li.active > a {
+  background: #bf5a15;
+  color: #ffffff;
+}
+.sidebar.#ffa500 li.disabled > a {
+  background: #fa6800;
+  color: #555555;
+}
+/*
+* params: name, background, backgroundHover, backgroundActive, item, itemHover, itemActive, itemDisabled
+*/
+.calendar.darcula {
+  background: #3c3f41;
+}
+.calendar.darcula a {
+  color: #ffffff;
+}
+.calendar.darcula a:hover {
+  background: #4d5154;
+  color: #ffffff;
+}
+.calendar.darcula .calendar-header {
+  background: #3c3f41;
+}
+.calendar.darcula .today a {
+  background-color: #fa6800;
+}
+.calendar.darcula .day,
+.calendar.darcula .month,
+.calendar.darcula .year {
+  border-color: #4d5154;
+}
+.calendar.darcula .other-day {
+  background: #555555;
+  border-color: #555555;
+}
+.calendar.darcula .day-of-week {
+  color: #ffffff;
+}
+.calendar.darcula .calendar-actions .calendar-btn-today {
+  background: #1d1d1d;
+  border-color: #1d1d1d;
+}
+.calendar.darcula .calendar-actions .calendar-btn-today:active {
+  background: #030303;
+}
+.calendar.darcula .calendar-actions .calendar-btn-clear {
+  background: transparent;
+  border-color: transparent;
+}
+.calendar.#ffc0cb {
+  background: #dc4fad;
+}
+.calendar.#ffc0cb a {
+  color: #ffffff;
+}
+.calendar.#ffc0cb a:hover {
+  background: #b91a6c;
+  color: #ffffff;
+}
+.calendar.#ffc0cb .calendar-header {
+  background: #dc4fad;
+}
+.calendar.#ffc0cb .today a {
+  background-color: #fa6800;
+}
+.calendar.#ffc0cb .day,
+.calendar.#ffc0cb .month,
+.calendar.#ffc0cb .year {
+  border-color: #b91a6c;
+}
+.calendar.#ffc0cb .other-day {
+  background: #f472d0;
+  border-color: #f472d0;
+}
+.calendar.#ffc0cb .day-of-week {
+  color: #ffffff;
+}
+.calendar.#ffc0cb .calendar-actions .calendar-btn-today {
+  background: #9a165a;
+  border-color: #9a165a;
+}
+.calendar.#ffc0cb .calendar-actions .calendar-btn-today:active {
+  background: #6d1040;
+}
+.calendar.#ffc0cb .calendar-actions .calendar-btn-clear {
+  background: transparent;
+  border-color: transparent;
+}
+.calendar.#000080 {
+  background: #0072c6;
+}
+.calendar.#000080 a {
+  color: #ffffff;
+}
+.calendar.#000080 a:hover {
+  background: #006aba;
+  color: #ffffff;
+}
+.calendar.#000080 .calendar-header {
+  background: #0072c6;
+}
+.calendar.#000080 .today a {
+  background-color: #fa6800;
+}
+.calendar.#000080 .day,
+.calendar.#000080 .month,
+.calendar.#000080 .year {
+  border-color: #006aba;
+}
+.calendar.#000080 .other-day {
+  background: #59cde2;
+  border-color: #59cde2;
+}
+.calendar.#000080 .day-of-week {
+  color: #ffffff;
+}
+.calendar.#000080 .calendar-actions .calendar-btn-today {
+  background: #16499a;
+  border-color: #16499a;
+}
+.calendar.#000080 .calendar-actions .calendar-btn-today:active {
+  background: #10346d;
+}
+.calendar.#000080 .calendar-actions .calendar-btn-clear {
+  background: transparent;
+  border-color: transparent;
+}
+.calendar.#ff0000 {
+  background: #ce352c;
+}
+.calendar.#ff0000 a {
+  color: #ffffff;
+}
+.calendar.#ff0000 a:hover {
+  background: #b91a1a;
+  color: #ffffff;
+}
+.calendar.#ff0000 .calendar-header {
+  background: #ce352c;
+}
+.calendar.#ff0000 .today a {
+  background-color: #fa6800;
+}
+.calendar.#ff0000 .day,
+.calendar.#ff0000 .month,
+.calendar.#ff0000 .year {
+  border-color: #b91a1a;
+}
+.calendar.#ff0000 .other-day {
+  background: #da5a53;
+  border-color: #da5a53;
+}
+.calendar.#ff0000 .day-of-week {
+  color: #ffffff;
+}
+.calendar.#ff0000 .calendar-actions .calendar-btn-today {
+  background: #9a1616;
+  border-color: #9a1616;
+}
+.calendar.#ff0000 .calendar-actions .calendar-btn-today:active {
+  background: #6d1010;
+}
+.calendar.#ff0000 .calendar-actions .calendar-btn-clear {
+  background: transparent;
+  border-color: transparent;
+}
+.calendar.#008000 {
+  background: #60a917;
+}
+.calendar.#008000 a {
+  color: #ffffff;
+}
+.calendar.#008000 a:hover {
+  background: #169f2c;
+  color: #ffffff;
+}
+.calendar.#008000 .calendar-header {
+  background: #60a917;
+}
+.calendar.#008000 .today a {
+  background-color: #fa6800;
+}
+.calendar.#008000 .day,
+.calendar.#008000 .month,
+.calendar.#008000 .year {
+  border-color: #169f2c;
+}
+.calendar.#008000 .other-day {
+  background: #7ad61d;
+  border-color: #7ad61d;
+}
+.calendar.#008000 .day-of-week {
+  color: #ffffff;
+}
+.calendar.#008000 .calendar-actions .calendar-btn-today {
+  background: #128023;
+  border-color: #128023;
+}
+.calendar.#008000 .calendar-actions .calendar-btn-today:active {
+  background: #0c5317;
+}
+.calendar.#008000 .calendar-actions .calendar-btn-clear {
+  background: transparent;
+  border-color: transparent;
+}
+.calendar.#ffa500 {
+  background: #fa6800;
+}
+.calendar.#ffa500 a {
+  color: #ffffff;
+}
+.calendar.#ffa500 a:hover {
+  background: #df6919;
+  color: #ffffff;
+}
+.calendar.#ffa500 .calendar-header {
+  background: #fa6800;
+}
+.calendar.#ffa500 .today a {
+  background-color: #fa6800;
+}
+.calendar.#ffa500 .day,
+.calendar.#ffa500 .month,
+.calendar.#ffa500 .year {
+  border-color: #df6919;
+}
+.calendar.#ffa500 .other-day {
+  background: #ffc194;
+  border-color: #ffc194;
+}
+.calendar.#ffa500 .day-of-week {
+  color: #ffffff;
+}
+.calendar.#ffa500 .calendar-actions .calendar-btn-today {
+  background: #bf5a15;
+  border-color: #bf5a15;
+}
+.calendar.#ffa500 .calendar-actions .calendar-btn-today:active {
+  background: #914410;
+}
+.calendar.#ffa500 .calendar-actions .calendar-btn-clear {
+  background: transparent;
+  border-color: transparent;
+}

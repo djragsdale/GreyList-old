@@ -18,24 +18,28 @@ var data = {
             "lastupdated": "11/19/2015 12:26 AM",
             "items": [
                 {
+                    "id": 1,
                     "seqno": 1,
                     "checked": false,
                     "updated": "11/19/2015 12:26 AM",
                     "text": "Item 1"
                 },
                 {
+                    "id": 2,
                     "seqno": 2,
                     "checked": true,
                     "updated": "11/19/2015 12:26 AM",
                     "text": "Item 2"
                 },
                 {
+                    "id": 3,
                     "seqno": 3,
                     "checked": false,
                     "updated": "11/19/2015 12:26 AM",
                     "text": "Item 3"
                 },
                 {
+                    "id": 4,
                     "seqno": 4,
                     "checked": false,
                     "updated": "11/19/2015 12:26 AM",
@@ -49,24 +53,28 @@ var data = {
             "lastupdated": "11/19/2015 12:26 AM",
             "items": [
                 {
+                    "id": 1,
                     "seqno": 1,
                     "checked": false,
                     "updated": "11/19/2015 12:26 AM",
                     "text": "Item 1"
                 },
                 {
+                    "id": 3,
                     "seqno": 2,
                     "checked": false,
                     "updated": "11/19/2015 12:26 AM",
                     "text": "Item 2"
                 },
                 {
+                    "id": 4,
                     "seqno": 3,
                     "checked": true,
                     "updated": "11/19/2015 12:26 AM",
                     "text": "Item 3"
                 },
                 {
+                    "id": 2,
                     "seqno": 4,
                     "checked": false,
                     "updated": "11/19/2015 12:26 AM",
@@ -80,24 +88,28 @@ var data = {
             "lastupdated": "11/19/2015 12:26 AM",
             "items": [
                 {
+                    "id": 1,
                     "seqno": 1,
                     "checked": true,
                     "updated": "11/19/2015 12:26 AM",
                     "text": "Item 1"
                 },
                 {
+                    "id": 2,
                     "seqno": 2,
                     "checked": true,
                     "updated": "11/19/2015 12:26 AM",
                     "text": "Item 2"
                 },
                 {
+                    "id": 3,
                     "seqno": 3,
                     "checked": true,
                     "updated": "11/19/2015 12:26 AM",
                     "text": "Item 3"
                 },
                 {
+                    "id": 4,
                     "seqno": 4,
                     "checked": true,
                     "updated": "11/19/2015 12:26 AM",
@@ -131,6 +143,21 @@ var data = {
 
 // GET
 
+exports.templates = function (req, res) {
+    var templates = [];
+    data.templates.forEach(function (template, i) {
+        templates.push({
+            id: template.id,
+            title: template.title,
+            lastupdated: template.lastupdated,
+            items: template.items
+        });
+    });
+    res.json({
+        templates: templates
+    });
+};
+
 exports.lists = function (req, res) {
     var lists = [];
     data.lists.forEach(function (list, i) {
@@ -141,6 +168,91 @@ exports.lists = function (req, res) {
             items: list.items
         });
     });
+    var templates = [];
+    data.templates.forEach(function (template, i) {
+        templates.push({
+            id: template.id,
+            title: template.title,
+            lastupdated: template.lastupdated,
+            items: template.items
+        });
+    });
+    res.json({
+        lists: lists,
+        templates: templates
+    });
+};
+
+exports.list = function (req, res) {
+    var templates = [];
+    data.templates.forEach(function (template, i) {
+        templates.push({
+            id: template.id,
+            title: template.title,
+            lastupdated: template.lastupdated,
+            items: template.items
+        });
+    });
+    var id = req.params.id;
+    if (id >= 0 && id < data.lists.length) {
+        res.json({
+            list: data.lists[id],
+            templates: templates
+        });
+    } else {
+        res.json(false);
+    }
+};
+
+// POST
+exports.addList = function (req, res) {
+    data.lists.push(req.body);
+    res.json(req.body);
+};
+
+// POST
+exports.addListFromTemplate = function (req, res) {
+    var id = req.body.template;
+    var newList = {
+        "id": 9, // TODO: get the next value
+        "title": "No name",
+        "lastupdated": "current time",
+        "items": []
+    };
+    data.templates[id].items.forEach(function (item, i) {
+        newList.items.push({
+            id: i,
+            seqno: i,
+            checked: false,
+            lastupdated: "current time",
+            text: item.text
+        });
+    });
+    data.lists.push(newList);
+    res.json(newList);
+};
+
+// PUT
+exports.editList = function (req, res) {
+    var id = req.params.id;
+
+    if (id >= 0 && id < data.lists.length) {
+        data.lists[id] = req.body;
+        res.json(true);
+    } else {
+        res.json(false);
+    }
+};
+
+exports.deleteList = function (req, res) {
+    var id = req.params.id;
+
+    if (id >= 0 && id < data.lists.length) {
+        data.lists.splice(id, 1);
+        res.json(true);
+    } else {
+        res.json(false);
+    }
 };
 
 exports.posts = function (req, res) {
