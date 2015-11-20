@@ -154,7 +154,27 @@ exports.templates = function (req, res) {
         });
     });
     res.json({
-        templates: templates
+        templates: [
+        {
+            "id": 1,
+            "title": "Monday",
+            "lastupdated": "11/19/2015 12:20 AM",
+            "items": [
+                {
+                    "text": "Item 1"
+                },
+                {
+                    "text": "Item 2"
+                },
+                {
+                    "text": "Item 3"
+                },
+                {
+                    "text": "Item 4"
+                }
+            ]
+        }
+        ]
     });
 };
 

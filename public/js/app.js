@@ -9,13 +9,17 @@ angular.module('myApp', [
 ]).
 config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
   $routeProvider.
-    when('/', {
-      templateUrl: 'partials/index',
-      controller: 'IndexCtrl'
-    }).
     when('/list/:id', {
         templateUrl: 'partials/list',
         controller: 'ListCtrl'
+    }).
+    when('/templates', {
+        templateUrl: 'partials/templates',
+        controller: 'TemplatesCtrl'
+    }).
+    when('/template/:id', {
+        templateUrl: 'partials/template',
+        controller: 'TemplateCtrl'
     }).
     when('/addList', {
        templateUrl: 'partials/addList',
@@ -36,6 +40,10 @@ config(['$routeProvider', '$locationProvider', function ($routeProvider, $locati
     when('/deletePost/:id', {
       templateUrl: 'partials/deletePost',
       controller: 'DeletePostCtrl'
+    }).
+    when('/', {
+      templateUrl: 'partials/index',
+      controller: 'IndexCtrl'
     }).
     otherwise({
       redirectTo: '/'

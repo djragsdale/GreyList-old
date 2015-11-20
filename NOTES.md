@@ -10,6 +10,7 @@ Assigned in routes/api.js.
 
 # REST API
 Rest API methods are assigned to routes in server.js.
+API methods are defined in routes/api.js, passing data through the REST API.
 
 # Form events
 Defined in public/js/controllers.js and assigned to $scope.

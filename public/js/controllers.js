@@ -11,10 +11,31 @@ function IndexCtrl($scope, $http) {
 }
 
 function TemplatesCtrl($scope, $http) {
-    $http.get('/api/templates').
-        success(function (data, status, headers, config) {
-            $scope.templates = "something";
-        });
+    //$http.get('/api/templates').
+    //    success(function (data, status, headers, config) {
+    //        $scope.templates = "something";
+    //    });
+    $scope.templates = [
+        {
+            "id": 1,
+            "title": "Monday",
+            "lastupdated": "11/19/2015 12:20 AM",
+            "items": [
+                {
+                    "text": "Item 1"
+                },
+                {
+                    "text": "Item 2"
+                },
+                {
+                    "text": "Item 3"
+                },
+                {
+                    "text": "Item 4"
+                }
+            ]
+        }
+    ];
 }
 
 function ListCtrl($scope, $http, $routeParams) {
