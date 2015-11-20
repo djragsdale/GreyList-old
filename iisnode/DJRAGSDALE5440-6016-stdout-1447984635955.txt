@@ -1,0 +1,73 @@
+Express server listening on port \\.\pipe\d482061b-d5ea-41e1-bdcb-a2e6cd385544
+[0mGET / [36m304 [0m31.376 ms - -[0m
+[90mGET / [36m304 [90m37ms[0m
+[0mGET /partials/index [32m200 [0m7.202 ms - 777[0m
+[90mGET /partials/index [32m200 [90m12ms - 777[0m
+[0mGET /api/lists [36m304 [0m2.055 ms - -[0m
+[90mGET /api/lists [36m304 [90m10ms[0m
+[0mGET /partials/templates [32m200 [0m3.526 ms - 159[0m
+[90mGET /partials/templates [32m200 [90m10ms - 159[0m
+[0mGET /partials/template [32m200 [0m2.733 ms - 254[0m
+[90mGET /partials/template [32m200 [90m8ms - 254[0m
+[0mGET /api/template/1 [32m200 [0m1.077 ms - 5[0m
+[90mGET /api/template/1 [32m200 [90m10ms - 5[0m
+[0mGET /template/1 [32m200 [0m9.684 ms - 1200[0m
+[90mGET /template/1 [32m200 [90m14ms - 1.17kb[0m
+[0mGET /partials/template [32m200 [0m2.081 ms - 251[0m
+[90mGET /partials/template [32m200 [90m6ms - 251[0m
+[0mGET /api/template/1 [32m200 [0m0.160 ms - 5[0m
+[90mGET /api/template/1 [32m200 [90m5ms - 5[0m
+[0mGET /favicon.ico [32m200 [0m1.559 ms - 1406[0m
+[0mGET /template/0 [32m200 [0m6.637 ms - 1200[0m
+[90mGET /template/0 [32m200 [90m12ms - 1.17kb[0m
+[0mGET /partials/template [32m200 [0m2.515 ms - 251[0m
+[90mGET /partials/template [32m200 [90m7ms - 251[0m
+[0mGET /api/template/0 [32m200 [0m0.174 ms - 289[0m
+[90mGET /api/template/0 [32m200 [90m5ms - 289[0m
+[0mGET /template/0 [36m304 [0m6.995 ms - -[0m
+[90mGET /template/0 [36m304 [90m16ms[0m
+[0mGET /partials/template [32m200 [0m1.479 ms - 212[0m
+[90mGET /partials/template [32m200 [90m6ms - 212[0m
+[0mGET /api/template/0 [32m200 [0m0.152 ms - 289[0m
+[90mGET /api/template/0 [32m200 [90m4ms - 289[0m
+[0mGET /favicon.ico [32m200 [0m0.087 ms - 1406[0m
+[0mGET /list/0 [32m200 [0m5.826 ms - 1200[0m
+[90mGET /list/0 [32m200 [90m13ms - 1.17kb[0m
+[0mGET /partials/list [31m500 [0m20.103 ms - -[0m
+[90mGET /partials/list [31m500 [90m26ms[0m
+[0mGET /templates [36m304 [0m2.745 ms - -[0m
+[90mGET /templates [36m304 [90m7ms[0m
+[0mGET /partials/templates [32m200 [0m1.468 ms - 159[0m
+[90mGET /partials/templates [32m200 [90m9ms - 159[0m
+[0mGET /templates [36m304 [0m2.754 ms - -[0m
+[90mGET /templates [36m304 [90m10ms[0m
+[0mGET /partials/templates [32m200 [0m1.475 ms - 159[0m
+[90mGET /partials/templates [32m200 [90m8ms - 159[0m
+[0mGET /favicon.ico [32m200 [0m0.070 ms - 1406[0m
+[0mGET /templates [36m304 [0m2.343 ms - -[0m
+[90mGET /templates [36m304 [90m10ms[0m
+[0mGET /partials/templates [32m200 [0m0.866 ms - 159[0m
+[90mGET /partials/templates [32m200 [90m5ms - 159[0m
+[0mGET /api/lists [36m304 [0m0.829 ms - -[0m
+[90mGET /api/lists [36m304 [90m8ms[0m
+[0mGET /favicon.ico [32m200 [0m0.058 ms - 1406[0m
+[0mGET /templates [36m304 [0m1.800 ms - -[0m
+[90mGET /templates [36m304 [90m9ms[0m
+[0mGET /partials/templates [32m200 [0m0.615 ms - 159[0m
+[90mGET /partials/templates [32m200 [90m6ms - 159[0m
+[0mGET /api/templates [32m200 [0m0.216 ms - 336[0m
+[90mGET /api/templates [32m200 [90m8ms - 336[0m
+[0mGET /favicon.ico [32m200 [0m0.336 ms - 1406[0m
+[0mGET /templates [36m304 [0m2.074 ms - -[0m
+[90mGET /templates [36m304 [90m12ms[0m
+[0mGET /partials/templates [32m200 [0m0.951 ms - 159[0m
+[90mGET /partials/templates [32m200 [90m6ms - 159[0m
+[0mGET /api/templates [32m200 [0m0.158 ms - 336[0m
+[90mGET /api/templates [32m200 [90m5ms - 336[0m
+[0mGET /favicon.ico [32m200 [0m0.046 ms - 1406[0m
+[0mGET /template/0 [36m304 [0m4.803 ms - -[0m
+[90mGET /template/0 [36m304 [90m13ms[0m
+[0mGET /partials/template [32m200 [0m0.775 ms - 212[0m
+[90mGET /partials/template [32m200 [90m6ms - 212[0m
+[0mGET /api/template/0 [32m200 [0m0.471 ms - 289[0m
+[90mGET /api/template/0 [32m200 [90m9ms - 289[0m

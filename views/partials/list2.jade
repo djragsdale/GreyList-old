@@ -1,0 +1,12 @@
+h3 {{list.title}}
+div {{list.lastupdated}}
+div(ng-repeat='item in list.items')
+  p
+    a(href='list/{{list.id}}/checkItem/{{item.id}}')
+      span(class='mif-checkmark')
+  |  -
+    [ ]
+    span {{item.text}}
+      a(href='list/{{list.id}}/deleteItem/{{item.id}}')
+      input(type='checkbox', checked='true')
+Delete

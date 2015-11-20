@@ -27,3 +27,5 @@ Express server listening on port \\.\pipe\9698dc4f-0d20-4437-a27d-e2d13825df8e
 [90mGET /templates [36m304 [90m11ms[0m
 [0mGET /partials/templates [31m500 [0m6.522 ms - -[0m
 [90mGET /partials/templates [31m500 [90m12ms[0m
+[0mGET /partials/templates [31m500 [0m9.788 ms - -[0m
+[90mGET /partials/templates [31m500 [90m16ms[0m

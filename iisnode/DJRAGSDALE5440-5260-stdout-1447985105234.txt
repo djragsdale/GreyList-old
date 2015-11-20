@@ -1,0 +1,8 @@
+Express server listening on port \\.\pipe\ac06cacd-e61f-44e8-97de-66ffd8a55698
+[0mGET /templates [36m304 [0m36.516 ms - -[0m
+[90mGET /templates [36m304 [90m45ms[0m
+[0mGET /partials/templates [32m200 [0m1.977 ms - 159[0m
+[90mGET /partials/templates [32m200 [90m8ms - 159[0m
+[0mGET /api/templates [32m200 [0m0.943 ms - 336[0m
+[90mGET /api/templates [32m200 [90m7ms - 336[0m
+[0mGET /favicon.ico [32m200 [0m1.894 ms - 1406[0m

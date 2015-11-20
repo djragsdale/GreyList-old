@@ -1,0 +1,14 @@
+Express server listening on port \\.\pipe\46e83ea3-115a-4566-89ab-a549bdadc256
+[0mGET /template/0 [36m304 [0m31.691 ms - -[0m
+[90mGET /template/0 [36m304 [90m38ms[0m
+[0mGET /partials/template [32m200 [0m2.748 ms - 212[0m
+[90mGET /partials/template [32m200 [90m7ms - 212[0m
+[0mGET /api/template/0 [32m200 [0m0.866 ms - 289[0m
+[90mGET /api/template/0 [32m200 [90m4ms - 289[0m
+[0mGET /favicon.ico [32m200 [0m0.712 ms - 1406[0m
+[0mGET /templates [36m304 [0m8.398 ms - -[0m
+[90mGET /templates [36m304 [90m13ms[0m
+[0mGET /partials/templates [32m200 [0m1.545 ms - 159[0m
+[90mGET /partials/templates [32m200 [90m5ms - 159[0m
+[0mGET /api/templates [32m200 [0m0.273 ms - 336[0m
+[90mGET /api/templates [32m200 [90m4ms - 336[0m

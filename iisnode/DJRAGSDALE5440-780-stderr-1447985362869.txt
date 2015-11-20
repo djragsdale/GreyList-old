@@ -1,0 +1,114 @@
+Error: C:\Users\drags\Documents\My Web Sites\GreyList\views\partials\list.jade:8
+    6|       span(class='mif-checkmark')
+    7|   |  -
+  > 8|     [ ]
+    9|     span {{item.text}}
+    10|       a(href='list/{{list.id}}/deleteItem/{{item.id}}')
+    11|       input(type='checkbox', checked='true')
+
+unexpected token "indent"
+    at Object.Parser.parseExpr (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\parser.js:241:15)
+    at Object.Parser.block (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\parser.js:573:25)
+    at Object.Parser.tag (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\parser.js:686:26)
+    at Object.Parser.parseTag (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\parser.js:605:17)
+    at Object.Parser.parseExpr (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\parser.js:198:21)
+    at Object.Parser.parse (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\parser.js:134:25)
+    at parse (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\jade.js:100:62)
+    at Object.exports.compile (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\jade.js:163:9)
+    at Object.exports.render (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\jade.js:215:17)
+    at View.exports.renderFile [as engine] (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\jade.js:243:13)
+Error: C:\Users\drags\Documents\My Web Sites\GreyList\views\partials\list.jade:8
+    6|       span(class='mif-checkmark')
+    7|   |  -
+  > 8|     [ ]
+    9|     span {{item.text}}
+    10|       a(href='list/{{list.id}}/deleteItem/{{item.id}}')
+    11|       input(type='checkbox', checked='true')
+
+unexpected token "indent"
+    at Object.Parser.parseExpr (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\parser.js:241:15)
+    at Object.Parser.block (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\parser.js:573:25)
+    at Object.Parser.tag (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\parser.js:686:26)
+    at Object.Parser.parseTag (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\parser.js:605:17)
+    at Object.Parser.parseExpr (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\parser.js:198:21)
+    at Object.Parser.parse (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\parser.js:134:25)
+    at parse (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\jade.js:100:62)
+    at Object.exports.compile (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\jade.js:163:9)
+    at Object.exports.render (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\jade.js:215:17)
+    at View.exports.renderFile [as engine] (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\jade.js:243:13)
+Error: C:\Users\drags\Documents\My Web Sites\GreyList\views\partials\list.jade:8
+    6|       span(class='mif-checkmark')
+    7|   |  -
+  > 8|     [ ]
+    9|     span {{item.text}}
+    10|       a(href='list/{{list.id}}/deleteItem/{{item.id}}')
+    11|       input(type='checkbox', checked='true')
+
+unexpected token "indent"
+    at Object.Parser.parseExpr (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\parser.js:241:15)
+    at Object.Parser.block (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\parser.js:573:25)
+    at Object.Parser.tag (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\parser.js:686:26)
+    at Object.Parser.parseTag (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\parser.js:605:17)
+    at Object.Parser.parseExpr (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\parser.js:198:21)
+    at Object.Parser.parse (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\parser.js:134:25)
+    at parse (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\jade.js:100:62)
+    at Object.exports.compile (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\jade.js:163:9)
+    at Object.exports.render (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\jade.js:215:17)
+    at View.exports.renderFile [as engine] (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\jade.js:243:13)
+Error: C:\Users\drags\Documents\My Web Sites\GreyList\views\partials\list.jade:8
+    6|       span(class='mif-checkmark')
+    7|   |  -
+  > 8|     [ ]
+    9|     span {{item.text}}
+    10|       a(href='list/{{list.id}}/deleteItem/{{item.id}}')
+    11|       input(type='checkbox', checked='true')
+
+unexpected token "indent"
+    at Object.Parser.parseExpr (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\parser.js:241:15)
+    at Object.Parser.block (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\parser.js:573:25)
+    at Object.Parser.tag (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\parser.js:686:26)
+    at Object.Parser.parseTag (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\parser.js:605:17)
+    at Object.Parser.parseExpr (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\parser.js:198:21)
+    at Object.Parser.parse (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\parser.js:134:25)
+    at parse (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\jade.js:100:62)
+    at Object.exports.compile (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\jade.js:163:9)
+    at Object.exports.render (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\jade.js:215:17)
+    at View.exports.renderFile [as engine] (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\jade.js:243:13)
+Error: C:\Users\drags\Documents\My Web Sites\GreyList\views\partials\list.jade:8
+    6|       span(class='mif-checkmark')
+    7|   |  -
+  > 8|     [ ]
+    9|     span {{item.text}}
+    10|       a(href='list/{{list.id}}/deleteItem/{{item.id}}')
+    11|       input(type='checkbox', checked='true')
+
+unexpected token "indent"
+    at Object.Parser.parseExpr (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\parser.js:241:15)
+    at Object.Parser.block (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\parser.js:573:25)
+    at Object.Parser.tag (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\parser.js:686:26)
+    at Object.Parser.parseTag (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\parser.js:605:17)
+    at Object.Parser.parseExpr (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\parser.js:198:21)
+    at Object.Parser.parse (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\parser.js:134:25)
+    at parse (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\jade.js:100:62)
+    at Object.exports.compile (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\jade.js:163:9)
+    at Object.exports.render (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\jade.js:215:17)
+    at View.exports.renderFile [as engine] (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\jade.js:243:13)
+Error: C:\Users\drags\Documents\My Web Sites\GreyList\views\partials\list.jade:8
+    6|       span(class='mif-checkmark')
+    7|   |  -
+  > 8|     [ ]
+    9|     span {{item.text}}
+    10|       a(href='list/{{list.id}}/deleteItem/{{item.id}}')
+    11|       input(type='checkbox', checked='true')
+
+unexpected token "indent"
+    at Object.Parser.parseExpr (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\parser.js:241:15)
+    at Object.Parser.block (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\parser.js:573:25)
+    at Object.Parser.tag (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\parser.js:686:26)
+    at Object.Parser.parseTag (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\parser.js:605:17)
+    at Object.Parser.parseExpr (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\parser.js:198:21)
+    at Object.Parser.parse (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\parser.js:134:25)
+    at parse (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\jade.js:100:62)
+    at Object.exports.compile (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\jade.js:163:9)
+    at Object.exports.render (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\jade.js:215:17)
+    at View.exports.renderFile [as engine] (C:\Users\drags\Documents\My Web Sites\GreyList\node_modules\jade\lib\jade.js:243:13)

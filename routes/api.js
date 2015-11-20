@@ -13,7 +13,7 @@ var data = {
     ],
     "lists": [
         {
-            "id": 1,
+            "id": 61,
             "title": "Monday 1",
             "lastupdated": "11/19/2015 12:26 AM",
             "items": [
@@ -48,7 +48,7 @@ var data = {
             ]
         },
         {
-            "id": 2,
+            "id": 12,
             "title": "Monday 2",
             "lastupdated": "11/19/2015 12:26 AM",
             "items": [
@@ -83,7 +83,7 @@ var data = {
             ]
         },
         {
-            "id": 3,
+            "id": 23,
             "title": "Monday 3",
             "lastupdated": "11/19/2015 12:26 AM",
             "items": [
@@ -120,7 +120,7 @@ var data = {
     ],
     "templates": [
         {
-            "id": 1,
+            "id": 31,
             "title": "Monday",
             "lastupdated": "11/19/2015 12:20 AM",
             "items": [
@@ -147,34 +147,14 @@ exports.templates = function (req, res) {
     var templates = [];
     data.templates.forEach(function (template, i) {
         templates.push({
-            id: template.id,
+            id: i,
             title: template.title,
             lastupdated: template.lastupdated,
             items: template.items
         });
     });
     res.json({
-        templates: [
-        {
-            "id": 1,
-            "title": "Monday",
-            "lastupdated": "11/19/2015 12:20 AM",
-            "items": [
-                {
-                    "text": "Item 1"
-                },
-                {
-                    "text": "Item 2"
-                },
-                {
-                    "text": "Item 3"
-                },
-                {
-                    "text": "Item 4"
-                }
-            ]
-        }
-        ]
+        templates: templates
     });
 };
 
@@ -199,7 +179,7 @@ exports.lists = function (req, res) {
             }
         });
         lists.push({
-            id: list.id,
+            id: i,
             title: list.title,
             lastupdated: list.lastupdated,
             items: list.items,
