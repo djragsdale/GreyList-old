@@ -52,7 +52,7 @@ function TemplateCtrl($scope, $http, $routeParams) {
             $scope.template = data.template;
         }).
         error(function (data, status, headers, config) {
-          $scope.templates = 'Error!';
+            $scope.templates = 'Error!';
         });
 }
 

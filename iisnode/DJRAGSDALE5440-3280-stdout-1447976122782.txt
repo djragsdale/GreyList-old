@@ -1,0 +1,28 @@
+Express server listening on port \\.\pipe\a490aa68-1149-46e9-bce1-8d7109957dd7
+[0mGET / [32m200 [0m32.733 ms - 1200[0m
+[90mGET / [32m200 [90m42ms - 1.17kb[0m
+[0mGET /partials/index [32m200 [0m8.727 ms - 777[0m
+[90mGET /partials/index [32m200 [90m17ms - 777[0m
+[0mGET /api/lists [36m304 [0m1.474 ms - -[0m
+[90mGET /api/lists [36m304 [90m6ms[0m
+[0mGET /favicon.ico [32m200 [0m16.195 ms - 1406[0m
+[0mGET /api/lists [36m304 [0m0.644 ms - -[0m
+[90mGET /api/lists [36m304 [90m11ms[0m
+[0mGET /api/lists [36m304 [0m0.681 ms - -[0m
+[90mGET /api/lists [36m304 [90m10ms[0m
+[0mGET /api/templates [33m404 [0m0.779 ms - -[0m
+[90mGET /api/templates [33m404 [90m9ms[0m
+[0mGET / [36m304 [0m10.701 ms - -[0m
+[90mGET / [36m304 [90m15ms[0m
+[0mGET /partials/index [32m200 [0m6.005 ms - 777[0m
+[90mGET /partials/index [32m200 [90m13ms - 777[0m
+[0mGET /api/lists [36m304 [0m1.335 ms - -[0m
+[90mGET /api/lists [36m304 [90m8ms[0m
+[0mGET /templates [33m404 [0m0.738 ms - -[0m
+[90mGET /templates [33m404 [90m7ms[0m
+[0mGET /templates [33m404 [0m0.312 ms - -[0m
+[90mGET /templates [33m404 [90m7ms[0m
+[0mGET /templates [33m404 [0m0.356 ms - -[0m
+[90mGET /templates [33m404 [90m8ms[0m
+[0mGET /templates [33m404 [0m0.491 ms - -[0m
+[90mGET /templates [33m404 [90m6ms[0m

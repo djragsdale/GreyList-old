@@ -13,6 +13,10 @@ config(['$routeProvider', '$locationProvider', function ($routeProvider, $locati
       templateUrl: 'partials/index',
       controller: 'IndexCtrl'
     }).
+    when('/list/:id', {
+        templateUrl: 'partials/list',
+        controller: 'ListCtrl'
+    }).
     when('/addList', {
        templateUrl: 'partials/addList',
        controller: 'AddListCtrl' 

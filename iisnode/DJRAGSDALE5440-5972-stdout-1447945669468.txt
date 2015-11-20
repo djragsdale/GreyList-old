@@ -1,7 +1,0 @@
-Express server listening on port \\.\pipe\cd3e8c9a-8912-4885-beef-206d725ed282
-[0mGET / [32m200 [0m38.116 ms - 900[0m
-[90mGET / [32m200 [90m44ms - 900[0m
-[0mGET /partials/index [32m200 [0m5.987 ms - 449[0m
-[90mGET /partials/index [32m200 [90m11ms - 449[0m
-[0mGET /api/lists [36m304 [0m1.939 ms - -[0m
-[90mGET /api/lists [36m304 [90m14ms[0m

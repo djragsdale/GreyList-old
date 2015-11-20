@@ -144,18 +144,29 @@ var data = {
 // GET
 
 exports.templates = function (req, res) {
-    //var templates = [];
-    //data.templates.forEach(function (template, i) {
-    //    templates.push({
-    //        id: template.id,
-    //        title: template.title,
-    //        lastupdated: template.lastupdated,
-    //        items: template.items
-    //    });
-    //});
-    res.json({
-        templates: "TEMPLATES"
+    var templates = [];
+    data.templates.forEach(function (template, i) {
+        templates.push({
+            id: template.id,
+            title: template.title,
+            lastupdated: template.lastupdated,
+            items: template.items
+        });
     });
+    res.json({
+        templates: templates
+    });
+};
+
+exports.template = function (req, res) {
+    var id = req.params.id;
+    if (id >= 0 && id < data.templates.length) {
+        res.json({
+            template: data.templates[id]
+        });
+    } else {
+        res.json(false);
+    }
 };
 
 exports.lists = function (req, res) {

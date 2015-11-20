@@ -61,6 +61,12 @@ app.post('/api/list', api.addList);
 app.put('/api/list/:id', api.editList);
 app.delete('/api/list/:id', api.deleteList);
 
+app.get('/api/templates', api.templates);
+app.get('/api/template/:id', api.template);
+//app.post('/api/template', api.addTemplate);
+//app.put('/api/template/:id', api.editTemplate);
+//app.delete('/api/template/:id', api.deleteTemplate);
+
 app.get('/api/posts', api.posts);
 
 app.get('/api/post/:id', api.post);

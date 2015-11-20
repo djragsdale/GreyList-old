@@ -3,3 +3,9 @@ Express server listening on port \\.\pipe\aa6335cc-2d41-488d-8754-f58fccfa9102
 [90mGET / [32m200 [90m170ms - 1.1kb[0m
 [0mGET / [36m304 [0m13.551 ms - -[0m
 [90mGET / [36m304 [90m18ms[0m
+[0mGET / [36m304 [0m12.211 ms - -[0m
+[90mGET / [36m304 [90m21ms[0m
+[0mGET /partials/index [32m200 [0m6.642 ms - 777[0m
+[90mGET /partials/index [32m200 [90m11ms - 777[0m
+[0mGET /api/lists [36m304 [0m1.398 ms - -[0m
+[90mGET /api/lists [36m304 [90m10ms[0m
