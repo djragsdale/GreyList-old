@@ -10,7 +10,7 @@
       "website": "http://theskylinesocial.com"
     }
   ],
-  "main": "./app.js",
+  "main": "./server.js",
   "keywords": [
     "To-Do List",
     "CGP Grey"

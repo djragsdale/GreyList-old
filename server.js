@@ -8,9 +8,12 @@ var express = require('express'),
   methodOverride = require('method-override'),
   errorHandler = require('error-handler'),
   morgan = require('morgan'),
+  mongoose = require('mongoose'),
   routes = require('./routes'),
-  //, user = require('./routes/user')
   api = require('./routes/api'),
+  db = require('./model/db'),
+  list = require('./model/list'),
+  listitem = require('./model/listitem'),
   http = require('http'),
   path = require('path');
 
