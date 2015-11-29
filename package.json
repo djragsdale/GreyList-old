@@ -21,7 +21,8 @@
     "jade": "*",
     "express": "~3.1.0",
     "method-override": "2.3.5",
-    "morgan": "1.6.1"
+    "morgan": "1.6.1",
+    "mongoose": "4.2.8"
   },
   "noAnalyze": true,
   "license": "Apache",

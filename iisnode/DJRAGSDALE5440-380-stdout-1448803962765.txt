@@ -24,3 +24,9 @@ Express server listening on port \\.\pipe\d8ef813a-4820-44d9-a8a0-fa8faa2906ae
 [90mGET /partials/index [32m200 [90m7ms - 777[0m
 [0mGET /api/lists [36m304 [0m1.233 ms - -[0m
 [90mGET /api/lists [36m304 [90m7ms[0m
+[0mGET / [36m304 [0m4.992 ms - -[0m
+[90mGET / [36m304 [90m25ms[0m
+[0mGET /partials/index [32m200 [0m1.407 ms - 777[0m
+[90mGET /partials/index [32m200 [90m6ms - 777[0m
+[0mGET /api/lists [36m304 [0m0.694 ms - -[0m
+[90mGET /api/lists [36m304 [90m8ms[0m
