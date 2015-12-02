@@ -1,151 +1,15 @@
 // initialize our faux database
+var fauxdb = require('../model/fauxdb');
 
-var data = {
-    "posts": [
-        {
-            "title": "Lorem ipsum",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        },
-        {
-            "title": "Sed egestas",
-            "text": "Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus."
-        }
-    ],
-    "lists": [
-        {
-            "id": 61,
-            "title": "Monday 1",
-            "lastupdated": "11/19/2015 12:26 AM",
-            "items": [
-                {
-                    "id": 1,
-                    "seqno": 1,
-                    "checked": false,
-                    "updated": "11/19/2015 12:26 AM",
-                    "text": "Item 1"
-                },
-                {
-                    "id": 2,
-                    "seqno": 2,
-                    "checked": true,
-                    "updated": "11/19/2015 12:26 AM",
-                    "text": "Item 2"
-                },
-                {
-                    "id": 3,
-                    "seqno": 3,
-                    "checked": false,
-                    "updated": "11/19/2015 12:26 AM",
-                    "text": "Item 3"
-                },
-                {
-                    "id": 4,
-                    "seqno": 4,
-                    "checked": false,
-                    "updated": "11/19/2015 12:26 AM",
-                    "text": "Item 4"
-                }
-            ]
-        },
-        {
-            "id": 12,
-            "title": "Monday 2",
-            "lastupdated": "11/19/2015 12:26 AM",
-            "items": [
-                {
-                    "id": 1,
-                    "seqno": 1,
-                    "checked": false,
-                    "updated": "11/19/2015 12:26 AM",
-                    "text": "Item 1"
-                },
-                {
-                    "id": 3,
-                    "seqno": 2,
-                    "checked": false,
-                    "updated": "11/19/2015 12:26 AM",
-                    "text": "Item 2"
-                },
-                {
-                    "id": 4,
-                    "seqno": 3,
-                    "checked": true,
-                    "updated": "11/19/2015 12:26 AM",
-                    "text": "Item 3"
-                },
-                {
-                    "id": 2,
-                    "seqno": 4,
-                    "checked": false,
-                    "updated": "11/19/2015 12:26 AM",
-                    "text": "Item 4"
-                }
-            ]
-        },
-        {
-            "id": 23,
-            "title": "Monday 3",
-            "lastupdated": "11/19/2015 12:26 AM",
-            "items": [
-                {
-                    "id": 1,
-                    "seqno": 1,
-                    "checked": true,
-                    "updated": "11/19/2015 12:26 AM",
-                    "text": "Item 1"
-                },
-                {
-                    "id": 2,
-                    "seqno": 2,
-                    "checked": true,
-                    "updated": "11/19/2015 12:26 AM",
-                    "text": "Item 2"
-                },
-                {
-                    "id": 3,
-                    "seqno": 3,
-                    "checked": true,
-                    "updated": "11/19/2015 12:26 AM",
-                    "text": "Item 3"
-                },
-                {
-                    "id": 4,
-                    "seqno": 4,
-                    "checked": true,
-                    "updated": "11/19/2015 12:26 AM",
-                    "text": "Item 4"
-                }
-            ]
-        }
-    ],
-    "templates": [
-        {
-            "id": 31,
-            "title": "Monday",
-            "lastupdated": "11/19/2015 12:20 AM",
-            "items": [
-                {
-                    "text": "Item 1"
-                },
-                {
-                    "text": "Item 2"
-                },
-                {
-                    "text": "Item 3"
-                },
-                {
-                    "text": "Item 4"
-                }
-            ]
-        }
-    ]
-};
+var mongoose = require('mongoose');
+var List = require('../model/list');
+
 
 // GET
 
 exports.templates = function (req, res) {
     var templates = [];
-    data.templates.forEach(function (template, i) {
+    fauxdb.data.templates.forEach(function (template, i) {
         templates.push({
             id: i,
             title: template.title,
@@ -160,9 +24,9 @@ exports.templates = function (req, res) {
 
 exports.template = function (req, res) {
     var id = req.params.id;
-    if (id >= 0 && id < data.templates.length) {
+    if (id >= 0 && id < fauxdb.data.templates.length) {
         res.json({
-            template: data.templates[id]
+            template: fauxdb.data.templates[id]
         });
     } else {
         res.json(false);
@@ -171,7 +35,7 @@ exports.template = function (req, res) {
 
 exports.lists = function (req, res) {
     var lists = [];
-    data.lists.forEach(function (list, i) {
+    fauxdb.data.lists.forEach(function (list, i) {
         var intComplete = 0;
         list.items.forEach(function (item, i) {
             if (item.checked) {
@@ -187,7 +51,7 @@ exports.lists = function (req, res) {
         });
     });
     var templates = [];
-    data.templates.forEach(function (template, i) {
+    fauxdb.data.templates.forEach(function (template, i) {
         templates.push({
             id: template.id,
             title: template.title,
@@ -195,6 +59,17 @@ exports.lists = function (req, res) {
             items: template.items
         });
     });
+
+    //mongoose.model('List').find({}, function (err, lists) {
+    //    if (err) {
+    //        return console.error(err);
+    //    } else {
+    //        res.json({
+    //            lists: lists
+    //        });
+    //    }
+    //});
+
     res.json({
         lists: lists,
         templates: templates
@@ -203,7 +78,7 @@ exports.lists = function (req, res) {
 
 exports.list = function (req, res) {
     var templates = [];
-    data.templates.forEach(function (template, i) {
+    fauxdb.data.templates.forEach(function (template, i) {
         templates.push({
             id: template.id,
             title: template.title,
@@ -212,9 +87,9 @@ exports.list = function (req, res) {
         });
     });
     var id = req.params.id;
-    if (id >= 0 && id < data.lists.length) {
+    if (id >= 0 && id < fauxdb.data.lists.length) {
         res.json({
-            list: data.lists[id],
+            list: fauxdb.data.lists[id],
             templates: templates
         });
     } else {
@@ -222,9 +97,40 @@ exports.list = function (req, res) {
     }
 };
 
+exports.getListFromJson = function (req, res) {
+    var item = {
+        id: 3,
+        //title: req.body.title,
+        title: "myList"
+    };
+
+    var list = new List({ id: 3, title: 'helloList' });
+    list.save(function (err, list) {
+        if (err) { return null }
+        res.json(list);
+    });
+};
+
 // POST
 exports.addList = function (req, res) {
-    data.lists.push(req.body);
+    //fauxdb.data.lists.push(req.body);
+    var item = {
+        id: 3,
+        title: req.body.title,
+        lastupdated: "now"
+    };
+    fauxdb.data.lists.push(item);
+
+    res.json(item);
+};
+
+exports.addListFromJson = function (req, res) {
+    var item = {
+        id: 3,
+        //title: req.body.title,
+        title: "myList"
+    };
+    
     res.json(req.body);
 };
 
@@ -237,7 +143,7 @@ exports.addListFromTemplate = function (req, res) {
         "lastupdated": "current time",
         "items": []
     };
-    data.templates[id].items.forEach(function (item, i) {
+    fauxdb.data.templates[id].items.forEach(function (item, i) {
         newList.items.push({
             id: i,
             seqno: i,
@@ -246,7 +152,7 @@ exports.addListFromTemplate = function (req, res) {
             text: item.text
         });
     });
-    data.lists.push(newList);
+    fauxdb.data.lists.push(newList);
     res.json(newList);
 };
 
@@ -254,8 +160,8 @@ exports.addListFromTemplate = function (req, res) {
 exports.editList = function (req, res) {
     var id = req.params.id;
 
-    if (id >= 0 && id < data.lists.length) {
-        data.lists[id] = req.body;
+    if (id >= 0 && id < fauxdb.data.lists.length) {
+        fauxdb.data.lists[id] = req.body;
         res.json(true);
     } else {
         res.json(false);
@@ -266,8 +172,8 @@ exports.editList = function (req, res) {
 exports.deleteList = function (req, res) {
     var id = req.params.id;
 
-    if (id >= 0 && id < data.lists.length) {
-        data.lists.splice(id, 1);
+    if (id >= 0 && id < fauxdb.data.lists.length) {
+        fauxdb.data.lists.splice(id, 1);
         res.json(true);
     } else {
         res.json(false);
@@ -278,7 +184,7 @@ exports.deleteList = function (req, res) {
 
 exports.posts = function (req, res) {
     var posts = [];
-    data.posts.forEach(function (post, i) {
+    fauxdb.data.posts.forEach(function (post, i) {
         posts.push({
             id: i,
             title: post.title,
@@ -292,9 +198,9 @@ exports.posts = function (req, res) {
 
 exports.post = function (req, res) {
     var id = req.params.id;
-    if (id >= 0 && id < data.posts.length) {
+    if (id >= 0 && id < fauxdb.data.posts.length) {
         res.json({
-            post: data.posts[id]
+            post: fauxdb.data.posts[id]
         });
     } else {
         res.json(false);
@@ -303,7 +209,7 @@ exports.post = function (req, res) {
 
 // POST
 exports.addPost = function (req, res) {
-    data.posts.push(req.body);
+    fauxdb.data.posts.push(req.body);
     res.json(req.body);
 };
 
@@ -311,8 +217,8 @@ exports.addPost = function (req, res) {
 exports.editPost = function (req, res) {
     var id = req.params.id;
 
-    if (id >= 0 && id < data.posts.length) {
-        data.posts[id] = req.body;
+    if (id >= 0 && id < fauxdb.data.posts.length) {
+        fauxdb.data.posts[id] = req.body;
         res.json(true);
     } else {
         res.json(false);
@@ -323,8 +229,8 @@ exports.editPost = function (req, res) {
 exports.deletePost = function (req, res) {
     var id = req.params.id;
 
-    if (id >= 0 && id < data.posts.length) {
-        data.posts.splice(id, 1);
+    if (id >= 0 && id < fauxdb.data.posts.length) {
+        fauxdb.data.posts.splice(id, 1);
         res.json(true);
     } else {
         res.json(false);

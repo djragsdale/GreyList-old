@@ -1,9 +1,0 @@
-Express server listening on port \\.\pipe\5cf49b12-d436-42a2-a22c-5a45c450753c
-[0mGET / [36m304 [0m33.001 ms - -[0m
-[90mGET / [36m304 [90m48ms[0m
-[0mGET /partials/index [32m200 [0m9.992 ms - 777[0m
-[90mGET /partials/index [32m200 [90m15ms - 777[0m
-[0mGET /api/lists [36m304 [0m1.362 ms - -[0m
-[90mGET /api/lists [36m304 [90m8ms[0m
-[0mGET /partials/templates [32m200 [0m1.350 ms - 38[0m
-[90mGET /partials/templates [32m200 [90m7ms - 38[0m

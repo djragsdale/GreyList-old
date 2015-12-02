@@ -11,9 +11,6 @@ var express = require('express'),
   mongoose = require('mongoose'),
   routes = require('./routes'),
   api = require('./routes/api'),
-  db = require('./model/db'),
-  list = require('./model/list'),
-  listitem = require('./model/listitem'),
   http = require('http'),
   path = require('path');
 
@@ -38,7 +35,7 @@ app.configure(function(){
 
 // development only
 app.configure('development', function(){
-  app.use(express.errorHandler());
+  app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
 });
 
 // production only
@@ -57,6 +54,9 @@ app.get('/partials/:name', routes.partials);
 
 
 // JSON API
+
+app.post('/api/json', api.addListFromJson);
+app.get('/api/json', api.getListFromJson);
 
 app.get('/api/lists', api.lists);
 app.get('/api/list/:id', api.list);
