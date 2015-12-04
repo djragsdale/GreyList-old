@@ -3,6 +3,7 @@ var fauxdb = require('../model/fauxdb');
 
 var mongoose = require('mongoose');
 var List = require('../model/list');
+var ListItem = require('../model/listitem');
 
 
 // GET
@@ -34,7 +35,8 @@ exports.template = function (req, res) {
 };
 
 exports.lists = function (req, res) {
-    var lists = [];
+    var _lists = [];
+    var _fauxLists = [];
     fauxdb.data.lists.forEach(function (list, i) {
         var intComplete = 0;
         list.items.forEach(function (item, i) {
@@ -42,7 +44,7 @@ exports.lists = function (req, res) {
                 intComplete++;
             }
         });
-        lists.push({
+        _fauxLists.push({
             id: i,
             title: list.title,
             lastupdated: list.lastupdated,
@@ -50,14 +52,35 @@ exports.lists = function (req, res) {
             completed: intComplete
         });
     });
-    var templates = [];
+    var _templates = [];
     fauxdb.data.templates.forEach(function (template, i) {
-        templates.push({
+        _templates.push({
             id: template.id,
             title: template.title,
             lastupdated: template.lastupdated,
             items: template.items
         });
+    });
+
+    List.find()
+    .sort('-lastupdated')
+    .exec(function (err, lists) {
+        if (err) { return next(err) }
+        res.json(lists)
+        //lists.forEach(function (list, i) {
+        //    _lists.push({
+        //        id: i,
+        //        title: list.title,
+        //        lastupdated: list.lastupdated
+        //    });
+        //    //    _lists.push({
+        //    //        id: i,
+        //    //        title: list.title,
+        //    //        lastupdated: list.lastupdated,
+        //    //        items: list.items,
+        //    //        completed: intComplete
+        //    //    });
+        //});
     });
 
     //mongoose.model('List').find({}, function (err, lists) {
@@ -70,10 +93,10 @@ exports.lists = function (req, res) {
     //    }
     //});
 
-    res.json({
-        lists: lists,
-        templates: templates
-    });
+    //res.json({
+    //    lists: _lists,
+    //    templates: _templates
+    //});
 };
 
 exports.list = function (req, res) {
@@ -98,17 +121,23 @@ exports.list = function (req, res) {
 };
 
 exports.getListFromJson = function (req, res) {
-    var item = {
-        id: 3,
-        //title: req.body.title,
-        title: "myList"
-    };
+    //var item = {
+    //    id: 2,
+    //    //title: req.body.title,
+    //    title: "myList"
+    //};
 
-    var list = new List({ id: 3, title: 'helloList' });
-    list.save(function (err, list) {
-        if (err) { return null }
-        res.json(list);
-    });
+    //var list = new List({ id: item.id, title: item.title });
+    //list.save(function (err, list) {
+    //    if (err) { return null }
+    //    //res.json(list);
+        List.find()
+        .sort('-lastupdated')
+        .exec(function (err, lists) {
+            if (err) { return next(err) }
+            res.json(lists)
+        });
+    //});
 };
 
 // POST
@@ -174,63 +203,6 @@ exports.deleteList = function (req, res) {
 
     if (id >= 0 && id < fauxdb.data.lists.length) {
         fauxdb.data.lists.splice(id, 1);
-        res.json(true);
-    } else {
-        res.json(false);
-    }
-};
-
-
-
-exports.posts = function (req, res) {
-    var posts = [];
-    fauxdb.data.posts.forEach(function (post, i) {
-        posts.push({
-            id: i,
-            title: post.title,
-            text: post.text.substr(0, 50) + '...'
-        });
-    });
-    res.json({
-        posts: posts
-    });
-};
-
-exports.post = function (req, res) {
-    var id = req.params.id;
-    if (id >= 0 && id < fauxdb.data.posts.length) {
-        res.json({
-            post: fauxdb.data.posts[id]
-        });
-    } else {
-        res.json(false);
-    }
-};
-
-// POST
-exports.addPost = function (req, res) {
-    fauxdb.data.posts.push(req.body);
-    res.json(req.body);
-};
-
-// PUT
-exports.editPost = function (req, res) {
-    var id = req.params.id;
-
-    if (id >= 0 && id < fauxdb.data.posts.length) {
-        fauxdb.data.posts[id] = req.body;
-        res.json(true);
-    } else {
-        res.json(false);
-    }
-};
-
-// DELETE
-exports.deletePost = function (req, res) {
-    var id = req.params.id;
-
-    if (id >= 0 && id < fauxdb.data.posts.length) {
-        fauxdb.data.posts.splice(id, 1);
         res.json(true);
     } else {
         res.json(false);

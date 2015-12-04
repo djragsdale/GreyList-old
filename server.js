@@ -20,13 +20,11 @@ app.configure(function(){
   app.set('port', process.env.PORT || 3000);
   app.set('views', __dirname + '/views');
   app.set('view engine', 'jade');
-  app.use(morgan('dev')); // from app.js
+  app.use(morgan('dev'));
   app.use(express.favicon());
   app.use(express.logger('dev'));
-  app.use(bodyParser());  // from app.js
-  //app.use(express.bodyParser());
-  app.use(methodOverride()); // from app.js
-  //app.use(express.methodOverride());
+  app.use(bodyParser());
+  app.use(methodOverride());
   app.use(app.router);
   app.use(express.static(path.join(__dirname, 'public')));
 });
@@ -69,13 +67,6 @@ app.get('/api/template/:id', api.template);
 //app.post('/api/template', api.addTemplate);
 //app.put('/api/template/:id', api.editTemplate);
 //app.delete('/api/template/:id', api.deleteTemplate);
-
-app.get('/api/posts', api.posts);
-
-app.get('/api/post/:id', api.post);
-app.post('/api/post', api.addPost);
-app.put('/api/post/:id', api.editPost);
-app.delete('/api/post/:id', api.deletePost);
 
 // The VERY LAST route
 app.get('*', routes.index);

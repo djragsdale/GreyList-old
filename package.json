@@ -11,6 +11,10 @@
     }
   ],
   "main": "./server.js",
+  "scripts": 
+    { 
+      "start": "node server.js"
+    },
   "keywords": [
     "To-Do List",
     "CGP Grey"
