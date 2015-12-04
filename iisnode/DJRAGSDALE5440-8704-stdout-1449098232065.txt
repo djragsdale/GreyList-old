@@ -1,0 +1,3 @@
+Express server listening on port \\.\pipe\13847014-52c2-46af-a13c-f7fed9259d37
+[0mGET /api/json [31m500 [0m15.166 ms - -[0m
+[90mGET /api/json [31m500 [90m22ms[0m

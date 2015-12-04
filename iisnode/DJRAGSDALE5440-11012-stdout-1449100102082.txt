@@ -1,0 +1,6 @@
+Express server listening on port \\.\pipe\0b9c713e-1948-4a17-bf56-6753dc090238
+mongodb connected
+[0mGET /api/json [32m200 [0m5.872 ms - 131[0m
+[90mGET /api/json [32m200 [90m10ms - 131[0m
+[0mGET /api/json [32m200 [0m3.873 ms - 131[0m
+[90mGET /api/json [32m200 [90m11ms - 131[0m

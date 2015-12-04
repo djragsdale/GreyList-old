@@ -31,10 +31,12 @@ function ListCtrl($scope, $http, $routeParams) {
 
 function AddListCtrl($scope, $http) {
     $scope.form = {};
-    $scope.submitPost = function () {
+    $scope.submitList = function () {
+        console.log($scope.form);
         $http.post('/api/list', $scope.form).
             success(function (data) {
-                $location.path('/');
+                console.log(data);
+                //$location.path('/');
             });
     };
 }
