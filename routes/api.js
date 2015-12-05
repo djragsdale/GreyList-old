@@ -61,7 +61,57 @@ exports.lists = function (req, res) {
             items: template.items
         });
     });
+    
 
+    // // Creates list
+    // var item = {
+    //    id: 1,
+    //    title: "List 1",
+    //    items: []
+    // };
+    // var list = new List({ id: item.id, title: item.title, items: item.items });
+    // list.save(function (err, list) {
+    //     if (err) { return null }
+    //     //res.json(list);
+    // });
+
+    // // Reads List
+    // List.find({
+    //     id: 1
+    // }).exec(function (err, lists) {
+    //     if (err) { return next(err) }
+    //     if (lists.length == 1) {
+    //         res.json(lists[0]);
+    //     }
+    // });
+
+    // // Updates List
+    // List.find({
+    //     id: 2
+    // }).exec(function (err, lists) {
+    //     if (err) { return next(err) }
+    //     if (lists.length == 1) {
+    //         var listDocId = lists[0]._id;
+    //         List.findById(listDocId, function (err, list) {
+    //             if (err) { res.json({ error: "Error finding model." }) }
+    //             list.title = "List 2";
+    //             //list.lastupdated = Date.now;
+    //             list.save(function (err) {
+    //                 if (err) { res.json({ error: "Error saving model." }) }
+    //                 res.json(list);
+    //             });
+    //         });
+    //     } else {
+    //         res.json({ error: "More than one match found." });
+    //     }
+    // });
+
+    // // Deletes list
+    // List.find({
+    //     id: 1
+    // }).remove().exec();
+
+    // Grabs all lists
     List.find()
     .sort('-lastupdated')
     .exec(function (err, lists) {
@@ -82,16 +132,6 @@ exports.lists = function (req, res) {
         //    //    });
         //});
     });
-
-    //mongoose.model('List').find({}, function (err, lists) {
-    //    if (err) {
-    //        return console.error(err);
-    //    } else {
-    //        res.json({
-    //            lists: lists
-    //        });
-    //    }
-    //});
 
     //res.json({
     //    lists: _lists,

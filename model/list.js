@@ -1,9 +1,25 @@
 var db = require('./db');
-var List = db.model('List', {
+var listSchema = new db.Schema({
     id: { type: Number, required: true },
     title: { type: String, required: true },
-    lastupdated: { type: Date, default: Date.now }
+    items: [{
+        seqno: { type: Number },
+        checked: { type: Boolean },
+        text: { type: String }
+    }]
+}, {
+    timestamps: { updatedAt: 'lastupdated' }
 });
+// var List = db.model('List', {
+//     id: { type: Number, required: true },
+//     title: { type: String, required: true },
+//     items: [{
+//         seqno: { type: Number },
+//         checked: { type: Boolean },
+//         text: { type: String }
+//     }]
+// });
+var List = db.model('List', listSchema);
 
 module.exports = List;
 
@@ -16,7 +32,8 @@ module.exports = List;
     //}],
     //items: [],
 
-// Do I need this to auto-increment the IDs
+// Do I need this to auto-increment the IDs or timestamp the lastupdated
+
 ////// This should auto-increment the IDs
 ////List.pre('save', function(next) {
 ////    var list = this;
@@ -28,3 +45,14 @@ module.exports = List;
 ////        next();
 ////    //}
 ////});
+
+// ItemSchema.pre('save', function(next){
+//   now = new Date();
+//   this.updated_at = now;
+//   if ( !this.created_at ) {
+//     this.created_at = now;
+//   }
+//   next();
+// });
+// or should I do the following in my schema (available as of 4.0)
+// timestamps: { updatedAt: 'lastupdated' }
